@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: PageProps) {
   const { locale } = await params;
 
   return {
-    title: locale === "es" ? "Contacto y Cotizaciones | Canito Construction" : "Contact & Request Estimates | Canito Construction",
+    title: locale === "es" ? "Contacto y Cotizaciones | Canito Construction LLC" : "Contact & Request Estimates | Canito Construction LLC",
     description: locale === "es" ? "Solicite una cotización de remodelación gratuita. Contáctenos hoy en Kyle y Austin, TX." : "Request a free remodeling quote. Contact our team today in Kyle and Austin, TX.",
     alternates: {
       canonical: "/contact",

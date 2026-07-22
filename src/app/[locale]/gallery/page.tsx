@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: PageProps) {
   const { locale } = await params;
 
   return {
-    title: locale === "es" ? "Galería de Proyectos Premium | Canito Construction" : "Premium Projects Gallery | Canito Construction",
+    title: locale === "es" ? "Galería de Proyectos Premium | Canito Construction LLC" : "Premium Projects Gallery | Canito Construction LLC",
     description: locale === "es" ? "Explore nuestro portafolio de remodelaciones de lujo en Austin y Kyle, TX." : "Explore our luxury remodeling and structural construction portfolio in Austin and Kyle, TX.",
     alternates: {
       canonical: "/gallery",
