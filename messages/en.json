@@ -1,0 +1,460 @@
+{
+  "Metadata": {
+    "title": "Canito Construction LLC | Premium Remodeling & Construction in Kyle, TX",
+    "description": "Transform your space with Canito Construction LLC. We specialize in residential and commercial remodeling, custom home improvement, and luxury renovations in Kyle, Texas, and surrounding areas."
+  },
+  "Navbar": {
+    "services": "Services",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "getQuote": "Get a Quote"
+  },
+  "Hero": {
+    "badge": "Premium Construction & Remodeling",
+    "title": "Crafting Architectural Masterpieces",
+    "subtitle": "High-end residential and commercial remodeling in Kyle, Texas. Designed for those who value quality above all else.",
+    "ctaPrimary": "Request Quote",
+    "ctaSecondary": "View Projects",
+    "trust": "Trusted by hundreds of homeowners and businesses across Central Texas."
+  },
+  "Stats": {
+    "experience": "Years of Excellence",
+    "projects": "Projects Delivered",
+    "satisfaction": "Client Satisfaction"
+  },
+  "Services": {
+    "title": "Our Services",
+    "subtitle": "Tailored construction solutions built to last, engineered with precision and premium craftsmanship.",
+    "interior": {
+      "title": "Interior Remodeling",
+      "description": "Bespoke kitchen updates, master bathroom conversions, and high-end living area modifications."
+    },
+    "exterior": {
+      "title": "Exterior Remodeling",
+      "description": "Sophisticated siding improvements, luxury patios, modern decks, and structural facade renovations."
+    },
+    "painting": {
+      "title": "Painting",
+      "description": "Flawless custom interior and exterior painting services using high-grade eco-friendly paints."
+    },
+    "drywall": {
+      "title": "Drywall",
+      "description": "Seamless drywall installation, framing, precise tape & float finishing, and texture matching."
+    },
+    "flooring": {
+      "title": "Flooring",
+      "description": "Premium hardwood installation, luxury vinyl planks (LVP), and large format custom tiling."
+    },
+    "carpentry": {
+      "title": "Carpentry",
+      "description": "Detailed custom cabinetry, custom built-ins, modern trim work, and finish carpentry."
+    },
+    "handyman": {
+      "title": "Handyman Services",
+      "description": "Responsive professional home repairs, fixture installations, and detailing maintenance."
+    },
+    "commercial": {
+      "title": "Commercial Improvements",
+      "description": "Premium commercial office buildouts, retail remodels, and tenant improvements."
+    },
+    "custom": {
+      "title": "Custom Renovations",
+      "description": "Tailor-made structural renovations engineered around luxury modern architecture."
+    }
+  },
+  "ServicesPagesData": {
+    "interior": {
+      "title": "Interior Remodeling",
+      "seoTitle": "Luxury Interior Remodeling in Kyle, TX | Canito Construction LLC",
+      "seoDesc": "Renovate your kitchen, bathrooms, and living areas with premium Texas craftsmanship. Get your free estimate today.",
+      "longDesc": "Elevate your daily living with our bespoke interior remodeling services. We specialize in custom luxury kitchen renovations, spa-like bathroom transformations, and complete spatial redesigns that reflect your personal aesthetics and functional requirements.",
+      "benefits": {
+        "b1Title": "Custom Cabinetry & Finishes",
+        "b1Desc": "Handcrafted details, custom wood selections, and premium paints/sealants.",
+        "b2Title": "Optimized Space Layouts",
+        "b2Desc": "We re-engineer floor plans to maximize natural light flow and room capacity.",
+        "b3Title": "Licensed Plumbing & Electrical",
+        "b3Desc": "All internal modifications comply fully with strict state safety and building codes."
+      },
+      "timeline": {
+        "step1": "Consultation",
+        "step1Desc": "In-home walkthrough discussing layout goals.",
+        "step2": "Design",
+        "step2Desc": "Architectural material rendering choices.",
+        "step3": "Execution",
+        "step3Desc": "Meticulous construction phase with clean work zones."
+      },
+      "faq": {
+        "q1": "How long does a kitchen remodel usually take?",
+        "a1": "A custom kitchen remodel typically takes between 3 to 5 weeks depending on layout and appliance integrations.",
+        "q2": "Do I need to vacate during renovations?",
+        "a2": "No, we isolate the dust zones and construct temporary paths to minimize disruption to your home life."
+      }
+    },
+    "exterior": {
+      "title": "Exterior Remodeling",
+      "seoTitle": "Premium Exterior Renovations & Siding in Kyle, TX | Canito Construction LLC",
+      "seoDesc": "Upgrade your home's curb appeal and weather defenses with custom siding, decks, and patios in Central Texas.",
+      "longDesc": "Protect your investment and enhance your home's visual profile. Our exterior remodeling services deliver structural upgrades including siding installations, high-grade decks, elegant concrete patios, and durable outdoor living structures.",
+      "benefits": {
+        "b1Title": "Weatherproof Defenses",
+        "b1Desc": "Premium siding and weather membranes engineered for the Texas climate.",
+        "b2Title": "Enhanced Curb Appeal",
+        "b2Desc": "Sophisticated modern facades that immediately elevate property market value.",
+        "b3Title": "Outdoor Entertainment Spaces",
+        "b3Desc": "Custom concrete masonry and deck structures tailored for relaxation."
+      },
+      "timeline": {
+        "step1": "Inspection",
+        "step1Desc": "Structural analysis of outdoor surfaces.",
+        "step2": "Permitting",
+        "step2Desc": "Handling HOA and local municipal compliance documents.",
+        "step3": "Build",
+        "step3Desc": "High-impact outdoor installation under clear timeline tracking."
+      },
+      "faq": {
+        "q1": "What siding materials do you recommend?",
+        "a1": "We highly recommend fiber-cement siding (like James Hardie) for its extreme fire, wind, and insect resistance.",
+        "q2": "Are permits required for a new deck?",
+        "a2": "Yes, standard decks require local municipal permits, which we handle completely as your contractor."
+      }
+    },
+    "painting": {
+      "title": "Painting",
+      "seoTitle": "Premium Interior & Exterior Painting in Kyle, TX",
+      "seoDesc": "Flawless custom painting services for homes and offices. High-grade paints and detailed surface preparation.",
+      "longDesc": "Add color, texture, and lasting protection. Our professional painting crews offer immaculate interior and exterior painting services utilizing premium coatings and unmatched surface prep work.",
+      "benefits": {
+        "b1Title": "Meticulous Surface Prep",
+        "b1Desc": "Sanding, caulking, priming, and wall repairs before applying paint.",
+        "b2Title": "Premium Low-VOC Paints",
+        "b2Desc": "Eco-friendly premium coatings that protect your family and health.",
+        "b3Title": "Laser-Straight Lines",
+        "b3Desc": "Flawless trim integration and neat borders on walls and ceilings."
+      },
+      "timeline": {
+        "step1": "Preparation",
+        "step1Desc": "Covering furniture, flooring, and patching wall imperfections.",
+        "step2": "Painting",
+        "step2Desc": "Applying base primers and multiple coats of premium paint.",
+        "step3": "Clean Up",
+        "step3Desc": "Full site cleanup, walkthrough, and client satisfaction check."
+      },
+      "faq": {
+        "q1": "How many coats of paint do you apply?",
+        "a1": "We consistently apply one coat of specialized primer followed by two coats of premium paint for long-lasting color depth.",
+        "q2": "Do you paint cabinets?",
+        "a2": "Yes, we spray and finish cabinets using high-durability urethane paints that result in a factory-smooth finish."
+      }
+    },
+    "drywall": {
+      "title": "Drywall Services",
+      "seoTitle": "Professional Drywall Installation & Repair in Kyle, TX",
+      "seoDesc": "Seamless drywall mounting, framing, taping, and texture matching. Reliable commercial and residential builders.",
+      "longDesc": "Ensure your walls are structurally sound and visually smooth. Our drywall team handles framing, hanging, precise tape & float finishing, texture blending, and popcorn ceiling removals.",
+      "benefits": {
+        "b1Title": "Seamless Joints",
+        "b1Desc": "Expert taping and floating that guarantees completely flat wall surfaces.",
+        "b2Title": "Acoustic Insulation",
+        "b2Desc": "Sound-dampening drywall configurations perfect for media rooms.",
+        "b3Title": "Professional Texture Matching",
+        "b3Desc": "Orange peel, knockdown, or smooth plaster matching techniques."
+      },
+      "timeline": {
+        "step1": "Framing & Hanging",
+        "step1Desc": "Mounting strong metal or wood studs and drywall panels.",
+        "step2": "Taping & Floating",
+        "step2Desc": "Applying structural mesh, mud layers, and sanding smooth.",
+        "step3": "Texturing",
+        "step3Desc": "Blending custom textures to match existing adjacent sections."
+      },
+      "faq": {
+        "q1": "Can you repair water-damaged drywall?",
+        "a1": "Yes, we remove the water-damaged portions, dry out the framework, and install clean, mold-resistant panels.",
+        "q2": "What is tape and float?",
+        "a2": "It is the process of applying mesh joint tape and multiple layers of joint compound to make drywall sheets look like a single seamless wall."
+      }
+    },
+    "flooring": {
+      "title": "Flooring",
+      "seoTitle": "Premium Hardwood, LVP & Tile Installation in Kyle, TX",
+      "seoDesc": "Professional flooring installations. Hardwood, engineered plank, vinyl tiles, and large format custom masonry tiling.",
+      "longDesc": "Update the foundation of your space's design. We install high-end solid hardwood, engineered wood, luxury vinyl planks (LVP), and custom tile layouts for kitchens and baths.",
+      "benefits": {
+        "b1Title": "Hardwood Precision",
+        "b1Desc": "Flawless spacing, subfloor preparation, and trim transitions.",
+        "b2Title": "Waterproof LVP Solutions",
+        "b2Desc": "Highly durable modern planks perfect for high-traffic or damp areas.",
+        "b3Title": "Large Format Custom Tile",
+        "b3Desc": "Meticulous grout lines and leveled tile layouts for absolute visual symmetry."
+      },
+      "timeline": {
+        "step1": "Demo & Prep",
+        "step1Desc": "Removing old flooring, leveling and cleaning the subfloor.",
+        "step2": "Installation",
+        "step2Desc": "Laying planks or tiles using premium adhesives and underlayments.",
+        "step3": "Finishing",
+        "step3Desc": "Installing matching baseboards, transition strips, and shoe molds."
+      },
+      "faq": {
+        "q1": "Do you install flooring over existing tile?",
+        "a1": "Depending on height and subfloor stability, some LVP can be floated over tile, but we generally recommend removing old layers for the best result.",
+        "q2": "How long does wood floor installation take?",
+        "a2": "Most typical rooms take 1-2 days, while full home installs can range from 3 to 5 days."
+      }
+    },
+    "carpentry": {
+      "title": "Carpentry",
+      "seoTitle": "Custom Carpentry & Cabinetry in Kyle, TX",
+      "seoDesc": "Bespoke woodwork, custom built-ins, modern finish trim, and framing. Skilled Texas woodworkers.",
+      "longDesc": "Add unique character and elegance to your layout. Our finish carpenters handcraft built-in bookcases, custom closet organizers, floating shelves, wainscoting, and modern door trim.",
+      "benefits": {
+        "b1Title": "Bespoke Wood Creations",
+        "b1Desc": "Custom sizing and material selection matching your decor style.",
+        "b2Title": "Trim & Moulding Elegance",
+        "b2Desc": "Precision crown moulding, baseboards, and fireplace mantels.",
+        "b3Title": "Strong Structural Framing",
+        "b3Desc": "Engineered framing for load-bearing and partition wall modifications."
+      },
+      "timeline": {
+        "step1": "Measurement",
+        "step1Desc": "Precise digital dimension checks on site.",
+        "step2": "Fabrication",
+        "step2Desc": "Cutting and assembling components using high-grade joinery.",
+        "step3": "Installation",
+        "step3Desc": "Seamless mounting, caulking, painting or staining on site."
+      },
+      "faq": {
+        "q1": "What woods do you work with?",
+        "a1": "We work with premium paint-grade MDF, maple, oak, walnut, and cherry woods depending on desired finish staining.",
+        "q2": "Do you design custom built-ins?",
+        "a2": "Yes, we construct custom shelving and entertainment centers to match your room dimensions exactly."
+      }
+    },
+    "handyman": {
+      "title": "Handyman Services",
+      "seoTitle": "Professional Handyman & Home Repair in Kyle, TX",
+      "seoDesc": "Reliable professional home repairs, fixture installations, and minor plumbing/electrical detailing.",
+      "longDesc": "Resolve your home repair checklist with high-end, responsive professional service. From faucet swaps and TV mounting to drywall patch ups and fixture updates, we execute with maximum detailing.",
+      "benefits": {
+        "b1Title": "Multidisciplinary Skills",
+        "b1Desc": "Equipped to handle plumbing, electrical, framing, and repair tasks.",
+        "b2Title": "Fast & Efficient",
+        "b2Desc": "Prompt scheduling and quick completion of maintenance issues.",
+        "b3Title": "Licensed Overviews",
+        "b3Desc": "We ensure small repairs comply with standard safety practices."
+      },
+      "timeline": {
+        "step1": "List Review",
+        "step1Desc": "Consolidating your repair points and planning tool requirements.",
+        "step2": "On-Site Repair",
+        "step2Desc": "Efficiently repairing items on your list during the visit.",
+        "step3": "Walkthrough",
+        "step3Desc": "Inspecting completed repairs to verify smooth operation."
+      },
+      "faq": {
+        "q1": "What is your hourly rate?",
+        "a1": "We charge a standard base service fee plus a flat rate per task, ensuring transparent pricing before we start.",
+        "q2": "Do you bring your own materials?",
+        "a2": "We supply standard fasteners, caulks, and structural items. Special fixtures (like lights or faucets) are provided by the client."
+      }
+    },
+    "commercial": {
+      "title": "Commercial Improvements",
+      "seoTitle": "Commercial Improvements & Office Remodeling in Kyle, TX",
+      "seoDesc": "High-end commercial office buildouts, retail remodels, tenant improvements. Reliable building contractors.",
+      "longDesc": "Elevate your business environment and client experience. We specialize in modern commercial office buildouts, retail renovations, showroom designs, and structural tenant improvements.",
+      "benefits": {
+        "b1Title": "Minimal Business Interruption",
+        "b1Desc": "Flexible scheduling options including night and weekend shifts.",
+        "b2Title": "Code Compliance",
+        "b2Desc": "Strict adherence to commercial fire, building, ADA accessibility, and Texas codes.",
+        "b3Title": "Aesthetic Office Layouts",
+        "b3Desc": "Stripe and Vercel inspired clean layout lines that motivate teams."
+      },
+      "timeline": {
+        "step1": "Scope Planning",
+        "step1Desc": "Evaluating architectural blueprints and timeline constraints.",
+        "step2": "Procurement",
+        "step2Desc": "Ordering commercial-grade materials and structural components.",
+        "step3": "Execution",
+        "step3Desc": "Rapid structural and mechanical construction under project management."
+      },
+      "faq": {
+        "q1": "Can you work outside of business hours?",
+        "a1": "Yes, we coordinate shifts during off-hours to ensure your business remains open and operational.",
+        "q2": "Do you handle ADA compliance upgrades?",
+        "a2": "Absolutely, we specialize in restructuring bathrooms, ramps, and doors to meet ADA and state standards."
+      }
+    },
+    "custom": {
+      "title": "Custom Renovations",
+      "seoTitle": "Luxury Custom Renovations & Structural Builds in Kyle, TX",
+      "seoDesc": "Bespoke structural remodeling and premium luxury architectural transformations in Central Texas.",
+      "longDesc": "Realize highly custom architectural designs. Our custom renovations team handles complex load-bearing wall removals, ceiling expansions, steel reinforcement inserts, and custom luxury home designs.",
+      "benefits": {
+        "b1Title": "Structural Engineering",
+        "b1Desc": "All architectural changes are backed by certified structural calculations.",
+        "b2Title": "Luxury Architectural Alignment",
+        "b2Desc": "Seamless window integrations, hidden trim details, and premium modern style.",
+        "b3Title": "Comprehensive Project Tracking",
+        "b3Desc": "Dedicated project manager overseeing specialized trades daily."
+      },
+      "timeline": {
+        "step1": "Consultation & Blueprinting",
+        "step1Desc": "Collaborating with architects and engineers on details.",
+        "step2": "Structural Reinforcement",
+        "step2Desc": "Shoring structures, inserting steel beams, and opening layouts.",
+        "step3": "Luxury Finish Out",
+        "step3Desc": "Applying premium coatings, textures, and bespoke joinery."
+      },
+      "faq": {
+        "q1": "Do you work with third-party architects?",
+        "a1": "Yes, we routinely collaborate with independent architects and interior designers to build according to their plans.",
+        "q2": "Are custom renovations fully permitted?",
+        "a2": "Always. We pull all structural, electrical, and plumbing permits and pass municipal inspections at every milestone."
+      }
+    }
+  },
+  "ProjectsData": {
+    "modern-texas-remodel": {
+      "title": "The Texas Modern Oasis",
+      "seoTitle": "Modern Kitchen Remodel in Austin, TX | Canito Construction LLC",
+      "seoDesc": "Explore our luxury kitchen transformation in Austin. Features Calacatta marble, custom oak trim, and top-tier finishes.",
+      "descShort": "Complete structural layout conversion and luxury kitchen design in Austin, TX.",
+      "descFull": "This project involved removing a central load-bearing brick wall to merge an outdated partitioned kitchen and dining room into a unified, open-concept luxury layout. Using premium materials including Calacatta marble countertops and customized solid oak framing.",
+      "challenges": "Merging structural spans without support pillars and routing mechanical venting invisibly.",
+      "solution": "Inserting a 22-foot structural steel I-beam flush with the ceiling frame, and custom routing exhaust vents through the joists.",
+      "benefits": "Maximized daylight flow, double the cabinet storage capacity, and seamless traffic routing.",
+      "testimonial": "Canito Construction converted our kitchen into a masterpiece. Meticulous execution."
+    },
+    "slate-spa-remodel": {
+      "title": "Slate & Spa Bath Remodel",
+      "seoTitle": "Charcoal Slate Bathroom Renovation in San Marcos, TX",
+      "seoDesc": "A premium spa-like bathroom transformation. Large format slate tiles, LED mirrors, and luxury gold details.",
+      "descShort": "Spa-like bathroom build with custom slate tiles and gold details in San Marcos, TX.",
+      "descFull": "We transformed a cramped main bathroom into a spa-like retreat. Features floor-to-ceiling textured charcoal slate tiles, a freestanding soaking tub, floating vanities, and warm indirect LED accent lighting.",
+      "challenges": "Leveling the subfloor for large-format slates and creating absolute waterproof seals behind stone layers.",
+      "solution": "Applying multi-stage self-leveling mortar and a double layer of high-performance liquid membrane waterproofing.",
+      "benefits": "Anti-slip slate flooring, spa-like freestanding bathtub, and smart LED ambiance.",
+      "testimonial": "The shower waterproofing and stone alignment are perfect. Professional work."
+    },
+    "facade-renovation-kyle": {
+      "title": "Modern Facade Renovation",
+      "seoTitle": "Luxury Exterior Siding & Remodeling in Kyle, TX",
+      "seoDesc": "Explore this exterior remodeling project in Kyle, Texas. James Hardie siding, cedar paneling, and modern lights.",
+      "descShort": "Exterior siding and modern wood facade upgrade in Kyle, TX.",
+      "descFull": "This facade upgrade stripped old wood siding, replacing it with durable James Hardie fiber-cement siding coupled with natural cedar wood panels for a warm modern aesthetic.",
+      "challenges": "Aligning cedar panel trim lines over uneven original exterior framing.",
+      "solution": "Installing a custom shimming rail system to establish a laser-flat plane before mounting cedar siding.",
+      "benefits": "Class-A fire protection, insect resistance, and striking architectural street appeal.",
+      "testimonial": "The wood facade looks beautiful. It changed the look of our home completely."
+    }
+  },
+  "About": {
+    "title": "Uncompromising Quality",
+    "subtitle": "Why choose Canito Construction LLC",
+    "bento1Title": "Apple-Level Precision",
+    "bento1Desc": "We treat every project as a piece of art, focusing on details that others overlook.",
+    "bento2Title": "On Time, On Budget",
+    "bento2Desc": "Structured management and transparent timelines ensure your project is completed without surprises.",
+    "bento3Title": "Licensed & Insured",
+    "bento3Desc": "Fully compliant with Texas state building codes and backed by comprehensive liability insurance.",
+    "bento4Title": "Client-Centric Process",
+    "bento4Desc": "We collaborate closely with you from initial design concept to final walk-through."
+  },
+  "WhyChooseUs": {
+    "title": "Why Choose Us",
+    "subtitle": "The values that differentiate our luxury construction services.",
+    "item1Title": "Free Estimates",
+    "item1Desc": "Transparent, itemized pricing structures without hidden charges or assumptions.",
+    "item2Title": "High Quality Materials",
+    "item2Desc": "We source premium woods, steels, stones, and coatings designed to stand the test of time.",
+    "item3Title": "Reliable Team",
+    "item3Desc": "Background-checked, licensed, and highly experienced local Texas construction professionals.",
+    "item4Title": "On Time Delivery",
+    "item4Desc": "Strict project timeline tracking ensures we hand over keys precisely on the agreed date.",
+    "item5Title": "Attention to Detail",
+    "item5Desc": "Meticulous alignment, seamless joints, and premium finishes inspected at every stage.",
+    "item6Title": "Customer Satisfaction",
+    "item6Desc": "We commit to absolute satisfaction, providing complete warranties on our workmanship."
+  },
+  "Projects": {
+    "title": "Selected Works",
+    "subtitle": "A showcase of luxury transformations and structural excellence in Central Texas."
+  },
+  "BeforeAfter": {
+    "title": "Before / After Showcase",
+    "subtitle": "Drag the slider to compare our high-quality project transformations.",
+    "before": "BEFORE",
+    "after": "AFTER"
+  },
+  "Testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Hear from local Texas residential and commercial owners who trusted our services.",
+    "client1": {
+      "comment": "Canito Construction converted our outdated kitchen into a modern luxury space. Their attention to detail was outstanding.",
+      "name": "Sarah Jenkins",
+      "city": "Austin, TX"
+    },
+    "client2": {
+      "comment": "Highly professional commercial office remodel. Finished on time, on budget, and exceeded our design expectations.",
+      "name": "Marcus Vance",
+      "city": "Kyle, TX"
+    },
+    "client3": {
+      "comment": "The custom concrete patio and siding work look beautiful. Truly premium craftsmanship and professional team.",
+      "name": "David Miller",
+      "city": "San Marcos, TX"
+    }
+  },
+  "Process": {
+    "title": "Our Work Process",
+    "subtitle": "A structured client journey from initial concept design to final key delivery.",
+    "step1": { "title": "Consultation", "desc": "On-site assessment to understand your goals." },
+    "step2": { "title": "Estimate", "desc": "Detailed project pricing layout breakdown." },
+    "step3": { "title": "Planning", "desc": "Architecture layouts, materials, schedules." },
+    "step4": { "title": "Construction", "desc": "Precision building phase monitored closely." },
+    "step5": { "title": "Inspection", "desc": "Final walkthrough checklist check for quality." },
+    "step6": { "title": "Delivery", "desc": "Handover of your fully transformed space." }
+  },
+  "FAQ": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Quick answers to help you plan your construction project.",
+    "q1": "Are you licensed and insured?",
+    "a1": "Yes. Canito Construction LLC is fully licensed and carries comprehensive commercial general liability insurance to guarantee peace of mind.",
+    "q2": "Do you provide free estimates?",
+    "a2": "Absolutely. We schedule custom on-site visits and outline free, itemized estimates covering materials, timeline, and labor.",
+    "q3": "What areas in Texas do you service?",
+    "a3": "We primarily service Kyle, Austin, San Marcos, Buda, New Braunfels, and surrounding Central Texas areas.",
+    "q4": "How long does a kitchen or bathroom remodel take?",
+    "a4": "A standard bathroom takes 2-3 weeks, while full luxury kitchen transformations usually range from 3 to 5 weeks depending on scope."
+  },
+  "Contact": {
+    "title": "Let's Build Something Extraordinary",
+    "subtitle": "Get in touch today to schedule an on-site consultation and receive a customized project proposal.",
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "service": "Project Type",
+    "selectService": "Select a service",
+    "message": "Project Details",
+    "submit": "Send Message",
+    "sending": "Sending...",
+    "success": "Thank you! Your message has been sent successfully. We will reach out to you shortly.",
+    "error": "Something went wrong. Please try again or contact us directly at info@canitoconstruction.com",
+    "validation": {
+      "name": "Name must be at least 3 characters.",
+      "email": "Please enter a valid email address.",
+      "phone": "Please enter a valid phone number.",
+      "service": "Please select a service type.",
+      "message": "Please describe your project (minimum 10 characters)."
+    }
+  },
+  "Footer": {
+    "tagline": "Building trust, excellence, and premium spaces across Kyle and Central Texas.",
+    "rights": "All rights reserved.",
+    "license": "Licensed & Insured | Kyle, TX"
+  }
+}
