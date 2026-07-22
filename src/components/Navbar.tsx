@@ -80,17 +80,17 @@ export default function Navbar() {
     >
       <div className={`${containerWidth} flex items-center justify-between`}>
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-3" aria-label="Canito Construction Home">
+        <Link href="/" className="flex items-center space-x-3" aria-label="Canito Construction LLC Home">
           <Image
             src="/logo-small.png"
-            alt="Canito Construction Logo"
+            alt="Canito Construction LLC Logo"
             width={32}
             height={32}
             className="w-8 h-8 object-contain rounded-md"
             priority
           />
           <span className="font-extrabold text-lg tracking-tight text-white flex items-center">
-            CANITO<span className="text-[#D4AF37] ml-1">CONSTRUCTION</span>
+            CANITO<span className="text-[#D4AF37] ml-1">CONSTRUCTION LLC</span>
           </span>
         </Link>
 
@@ -124,7 +124,7 @@ export default function Navbar() {
           <a
             href="tel:+15125637287"
             className="text-xs font-semibold text-white hover:text-[#D4AF37] transition-colors flex items-center gap-1.5 focus:outline-none focus:text-[#D4AF37]"
-            aria-label="Call Canito Construction"
+            aria-label="Call Canito Construction LLC"
           >
             <Icon name="phone" className="w-3.5 h-3.5" />
             <span>Call Now</span>

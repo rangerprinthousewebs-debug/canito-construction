@@ -146,8 +146,8 @@ export default async function ContactPage({ params }: PageProps) {
                       <span className="text-white font-semibold">Kyle, Austin & Central Texas</span>
                     </li>
                     <li className="flex justify-between">
-                      <span>Office:</span>
-                      <span className="text-white font-semibold">100 Center St, Kyle, TX</span>
+                      <span>Area:</span>
+                      <span className="text-white font-semibold">Kyle, TX</span>
                     </li>
                   </ul>
                 </Card>
@@ -155,7 +155,7 @@ export default async function ContactPage({ params }: PageProps) {
                 {/* Google Maps responsive iframe */}
                 <div className="relative aspect-[4/3] rounded-3xl overflow-hidden border border-white/5 bg-white/[0.02]">
                   <iframe
-                    title="Canito Construction Location Map"
+                    title="Canito Construction LLC Location Map"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m12!1m3!1d3457.652033621415!2d-97.8793887!3d29.9868997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865cb465a39794cb%3A0xe543e3d937077a5!2sKyle%20TX!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
                     width="100%"
                     height="100%"

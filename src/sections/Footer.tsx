@@ -26,12 +26,12 @@ export default function Footer() {
             <span className="font-extrabold text-lg tracking-tight text-white flex items-center gap-3">
               <Image
                 src="/logo-small.png"
-                alt="Canito Construction Logo"
+                alt="Canito Construction LLC Logo"
                 width={32}
                 height={32}
                 className="w-8 h-8 object-contain rounded-md"
               />
-              <span>CANITO<span className="text-[#D4AF37] ml-1">CONSTRUCTION</span></span>
+              <span>CANITO<span className="text-[#D4AF37] ml-1">CONSTRUCTION LLC</span></span>
             </span>
             <p className="text-[#9B9B9B] max-w-sm text-sm leading-relaxed">
               {t("tagline")}
