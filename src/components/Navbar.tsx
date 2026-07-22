@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/routing";
 import { useParams } from "next/navigation";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import Icon from "@/components/ui/Icon";
 import Button from "@/components/ui/Button";
@@ -79,8 +80,16 @@ export default function Navbar() {
     >
       <div className={`${containerWidth} flex items-center justify-between`}>
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-2" aria-label="Canito Construction Home">
-          <span className="font-extrabold text-xl tracking-tight text-white flex items-center">
+        <Link href="/" className="flex items-center space-x-3" aria-label="Canito Construction Home">
+          <Image
+            src="/logo-small.png"
+            alt="Canito Construction Logo"
+            width={32}
+            height={32}
+            className="w-8 h-8 object-contain rounded-md"
+            priority
+          />
+          <span className="font-extrabold text-lg tracking-tight text-white flex items-center">
             CANITO<span className="text-[#D4AF37] ml-1">CONSTRUCTION</span>
           </span>
         </Link>

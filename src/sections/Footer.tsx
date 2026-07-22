@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { Container, Grid } from "@/components/ui/Layouts";
+import Image from "next/image";
 
 export default function Footer() {
   const t = useTranslations("Footer");
@@ -22,8 +23,15 @@ export default function Footer() {
           
           {/* Tagline / Brand */}
           <div className="md:col-span-5 flex flex-col space-y-6">
-            <span className="font-extrabold text-xl tracking-tight text-white flex items-center">
-              CANITO<span className="text-[#D4AF37] ml-1">CONSTRUCTION</span>
+            <span className="font-extrabold text-lg tracking-tight text-white flex items-center gap-3">
+              <Image
+                src="/logo-small.png"
+                alt="Canito Construction Logo"
+                width={32}
+                height={32}
+                className="w-8 h-8 object-contain rounded-md"
+              />
+              <span>CANITO<span className="text-[#D4AF37] ml-1">CONSTRUCTION</span></span>
             </span>
             <p className="text-[#9B9B9B] max-w-sm text-sm leading-relaxed">
               {t("tagline")}
