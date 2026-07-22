@@ -11,12 +11,12 @@
     "getQuote": "Cotizar Proyecto"
   },
   "Hero": {
-    "badge": "Construcción y Remodelación Premium",
-    "title": "Diseñando Obras Maestras Arquitectónicas",
-    "subtitle": "Remodelación residencial y comercial de alta gama en Kyle, Texas. Diseñado para quienes valoran la calidad por encima de todo.",
+    "badge": "Mano de Obra Premium",
+    "title": "Perfección Arquitectónica",
+    "subtitle": "Remodelación de alta gama en Kyle, Texas. Para quienes valoran la calidad.",
     "ctaPrimary": "Solicitar Cotización",
     "ctaSecondary": "Ver Proyectos",
-    "trust": "La opción de confianza para cientos de propietarios y empresas en el centro de Texas."
+    "trust": "Confianza en todo el centro de Texas."
   },
   "Stats": {
     "experience": "Años de Excelencia",
@@ -25,42 +25,42 @@
   },
   "Services": {
     "title": "Nuestros Servicios",
-    "subtitle": "Soluciones de construcción personalizadas, diseñadas para perdurar con precisión y mano de obra premium.",
+    "subtitle": "Soluciones de construcción diseñadas con absoluta precisión.",
     "interior": {
       "title": "Remodelación Interior",
-      "description": "Actualizaciones de cocina a medida, conversiones de baño principal y modificaciones de áreas de estar de alta gama."
+      "description": "Cocinas, baños y áreas comunes a medida."
     },
     "exterior": {
       "title": "Remodelación Exterior",
-      "description": "Mejoras sofisticadas de revestimiento, patios de lujo, terrazas modernas y renovaciones de fachadas estructurales."
+      "description": "Revestimiento exterior, patios de lujo y fachadas."
     },
     "painting": {
       "title": "Pintura",
-      "description": "Servicios impecables de pintura interior y exterior utilizando pinturas de alta calidad y ecológicas."
+      "description": "Acabados y recubrimientos de primer nivel."
     },
     "drywall": {
       "title": "Drywall",
-      "description": "Instalación de paneles de yeso, enmarcado, acabados precisos de cinta y flotado, y combinación de texturas."
+      "description": "Estructuras, paneles de yeso y acabados impecables."
     },
     "flooring": {
       "title": "Pisos",
-      "description": "Instalación de madera noble premium, tablones de vinilo de lujo (LVP) y colocación de azulejos personalizados."
+      "description": "Pisos de madera premium, vinilos (LVP) y azulejos."
     },
     "carpentry": {
       "title": "Carpintería",
-      "description": "Gabinetes detallados a medida, muebles empotrados personalizados, molduras modernas y carpintería de acabado."
+      "description": "Muebles empotrados y detalles de carpintería fina."
     },
     "handyman": {
       "title": "Servicios de Handyman",
-      "description": "Reparaciones profesionales en el hogar, instalaciones de accesorios y mantenimiento detallado."
+      "description": "Reparaciones y mantenimiento de alta gama."
     },
     "commercial": {
       "title": "Mejoras Comerciales",
-      "description": "Acondicionamiento de oficinas comerciales premium, remodelaciones de locales y mejoras para inquilinos."
+      "description": "Acondicionamiento de oficinas y locales comerciales."
     },
     "custom": {
       "title": "Renovaciones Personalizadas",
-      "description": "Renovaciones estructurales a medida diseñadas en torno a la arquitectura moderna de lujo."
+      "description": "Modificaciones estructurales y diseños a medida."
     }
   },
   "ServicesPagesData": {
@@ -68,7 +68,7 @@
       "title": "Remodelación Interior",
       "seoTitle": "Remodelación Interior de Lujo en Kyle, TX | Canito Construction LLC",
       "seoDesc": "Renueva tu cocina, baños y áreas comunes con mano de obra premium en Texas. Solicita tu cotización gratuita hoy.",
-      "longDesc": "Eleva tu vida diaria con nuestros servicios personalizados de remodelación interior. Nos especializamos en renovaciones de cocinas de lujo a medida, transformaciones de baños tipo spa y rediseño espacial completo que refleja tus necesidades estéticas y funcionales.",
+      "longDesc": "Servicios personalizados de remodelación interior. Nos especializamos en renovaciones de cocinas de lujo a medida, transformaciones de baños tipo spa y rediseño espacial completo.",
       "benefits": {
         "b1Title": "Gabinetes y Acabados a Medida",
         "b1Desc": "Detalles hechos a mano, selección de maderas premium y pinturas de alta calidad.",
@@ -149,291 +149,291 @@
       }
     },
     "drywall": {
-      "title": "Drywall",
-      "seoTitle": "Instalación y Reparación Profesional de Drywall en Kyle, TX",
-      "seoDesc": "Instalación de paneles de yeso, encintado, flotado y texturas profesionales. Contratistas de confianza en Texas.",
-      "longDesc": "Asegura que tus paredes sean estructuralmente sólidas y visualmente lisas. Nuestro equipo maneja enmarcado, colgado de paneles, encintado y flotado preciso, combinación de texturas y remoción de techos de palomita.",
+      "title": "Drywall Services",
+      "seoTitle": "Professional Drywall Installation & Repair in Kyle, TX",
+      "seoDesc": "Seamless drywall mounting, framing, taping, and texture matching. Reliable commercial and residential builders.",
+      "longDesc": "Ensure your walls are structurally sound and visually smooth. Our drywall team handles framing, hanging, precise tape & float finishing, texture blending, and popcorn ceiling removals.",
       "benefits": {
-        "b1Title": "Juntas Invisibles",
-        "b1Desc": "Encintado y flotado profesional que garantiza superficies de pared completamente planas.",
-        "b2Title": "Aislamiento Acústico",
-        "b2Desc": "Configuraciones de drywall diseñadas para atenuar ruidos, ideal para salas de entretenimiento.",
-        "b3Title": "Igualación de Texturas",
-        "b3Desc": "Técnicas de texturado knockdown, orange peel o yeso liso."
+        "b1Title": "Seamless Joints",
+        "b1Desc": "Expert taping and floating that guarantees completely flat wall surfaces.",
+        "b2Title": "Acoustic Insulation",
+        "b2Desc": "Sound-dampening drywall configurations perfect for media rooms.",
+        "b3Title": "Professional Texture Matching",
+        "b3Desc": "Orange peel, knockdown, or smooth plaster matching techniques."
       },
       "timeline": {
-        "step1": "Enmarcado y Colgado",
-        "step1Desc": "Montaje de postes de madera o metal y fijación de placas de yeso.",
-        "step2": "Encintado y Flotado",
-        "step2Desc": "Aplicación de cinta de malla y múltiples capas de compuesto.",
-        "step3": "Texturado",
-        "step3Desc": "Igualación del acabado texturado para que coincida con las áreas adyacentes."
+        "step1": "Framing & Hanging",
+        "step1Desc": "Mounting strong metal or wood studs and drywall panels.",
+        "step2": "Taping & Floating",
+        "step2Desc": "Applying structural mesh, mud layers, and sanding smooth.",
+        "step3": "Texturing",
+        "step3Desc": "Blending custom textures to match existing adjacent sections."
       },
       "faq": {
-        "q1": "¿Pueden reparar paneles de yeso dañados por agua?",
-        "a1": "Sí, removemos las secciones dañadas por humedad, secamos el marco y colocamos paneles nuevos resistentes al moho.",
-        "q2": "¿Qué es el encintado y flotado?",
-        "a2": "Es el proceso de aplicar cinta especial y compuesto en las juntas de las placas para que parezcan una sola pared continua y sin uniones."
+        "q1": "Can you repair water-damaged drywall?",
+        "a1": "Yes, we remove the water-damaged portions, dry out the framework, and install clean, mold-resistant panels.",
+        "q2": "What is tape and float?",
+        "a2": "It is the process of applying mesh joint tape and multiple layers of joint compound to make drywall sheets look like a single seamless wall."
       }
     },
     "flooring": {
-      "title": "Pisos",
-      "seoTitle": "Instalación de Pisos de Madera, LVP y Azulejos en Kyle, TX",
-      "seoDesc": "Instalación profesional de madera noble, pisos de vinilo premium (LVP) y azulejos a medida.",
-      "longDesc": "Renueva la base del diseño de tus espacios. Instalamos madera noble de alta gama, madera de ingeniería, tablones de vinilo de lujo (LVP) y diseños de azulejos a medida para cocinas y baños.",
+      "title": "Flooring",
+      "seoTitle": "Premium Hardwood, LVP & Tile Installation in Kyle, TX",
+      "seoDesc": "Professional flooring installations. Hardwood, engineered plank, vinyl tiles, and large format custom masonry tiling.",
+      "longDesc": "Update the foundation of your space's design. We install high-end solid hardwood, engineered wood, luxury vinyl planks (LVP), and custom tile layouts for kitchens and baths.",
       "benefits": {
-        "b1Title": "Precisión en Madera",
-        "b1Desc": "Alineación impecable, preparación del contrapiso y transiciones limpias.",
-        "b2Title": "Planchas LVP Impermeables",
-        "b2Desc": "Materiales altamente duraderos ideales para áreas de mucho tráfico o húmedas.",
-        "b3Title": "Colocación de Azulejos",
-        "b3Desc": "Líneas de lechada meticulosas y nivelación perfecta para una simetría visual total."
+        "b1Title": "Hardwood Precision",
+        "b1Desc": "Flawless spacing, subfloor preparation, and trim transitions.",
+        "b2Title": "Waterproof LVP Solutions",
+        "b2Desc": "Highly durable modern planks perfect for high-traffic or damp areas.",
+        "b3Title": "Large Format Custom Tile",
+        "b3Desc": "Meticulous grout lines and leveled tile layouts for absolute visual symmetry."
       },
       "timeline": {
-        "step1": "Demolición y Prep",
-        "step1Desc": "Remoción de pisos anteriores, nivelación y limpieza del contrapiso.",
-        "step2": "Instalación",
-        "step2Desc": "Colocación de tablones o baldosas con adhesivos y aislantes premium.",
-        "step3": "Acabados",
-        "step3Desc": "Instalación de zócalos combinados y perfiles de transición."
+        "step1": "Demo & Prep",
+        "step1Desc": "Removing old flooring, leveling and cleaning the subfloor.",
+        "step2": "Installation",
+        "step2Desc": "Laying planks or tiles using premium adhesives and underlayments.",
+        "step3": "Finishing",
+        "step3Desc": "Installing matching baseboards, transition strips, and shoe molds."
       },
       "faq": {
-        "q1": "¿Se puede instalar piso nuevo sobre azulejo existente?",
-        "a1": "Dependiendo de la altura y estabilidad del contrapiso, el LVP se puede flotar sobre azulejo, pero usualmente recomendamos removerlo para un mejor resultado.",
-        "q2": "¿Cuánto toma instalar pisos de madera?",
-        "a2": "La mayoría de las habitaciones individuales toman de 1 a 2 días; la casa completa puede requerir de 3 a 5 días."
+        "q1": "Do you install flooring over existing tile?",
+        "a1": "Depending on height and subfloor stability, some LVP can be floated over tile, but we generally recommend removing old layers for the best result.",
+        "q2": "How long does wood floor installation take?",
+        "a2": "Most typical rooms take 1-2 days, while full home installs can range from 3 to 5 days."
       }
     },
     "carpentry": {
-      "title": "Carpintería",
-      "seoTitle": "Carpintería Residencial y Muebles a Medida en Kyle, TX",
-      "seoDesc": "Ebanistería personalizada, libreros empotrados, molduras finas y marcos. Carpinteros expertos en Texas.",
-      "longDesc": "Añade carácter y elegancia a tu hogar. Nuestros carpinteros diseñan libreros empotrados, organizadores de armarios a medida, estantes flotantes, molduras de corona y acabados de madera fina.",
+      "title": "Carpentry",
+      "seoTitle": "Custom Carpentry & Cabinetry in Kyle, TX",
+      "seoDesc": "Bespoke woodwork, custom built-ins, modern finish trim, and framing. Skilled Texas woodworkers.",
+      "longDesc": "Add unique character and elegance to your layout. Our finish carpenters handcraft built-in bookcases, custom closet organizers, floating shelves, wainscoting, and modern door trim.",
       "benefits": {
-        "b1Title": "Creaciones de Madera Finas",
-        "b1Desc": "Dimensiones exactas y selección de maderas premium adaptadas a tu decoración.",
-        "b2Title": "Molduras Elegantes",
-        "b2Desc": "Molduras de corona precisas, zócalos altos y repisas de chimenea.",
-        "b3Title": "Marcos Estructurales Sólidos",
-        "b3Desc": "Enmarcado de madera de alta resistencia para muros de carga o divisiones."
+        "b1Title": "Bespoke Wood Creations",
+        "b1Desc": "Custom sizing and material selection matching your decor style.",
+        "b2Title": "Trim & Moulding Elegance",
+        "b2Desc": "Precision crown moulding, baseboards, and fireplace mantels.",
+        "b3Title": "Strong Structural Framing",
+        "b3Desc": "Engineered framing for load-bearing and partition wall modifications."
       },
       "timeline": {
-        "step1": "Medición",
-        "step1Desc": "Toma de medidas digital directamente en el sitio.",
-        "step2": "Fabricación",
-        "step2Desc": "Corte y ensamble en taller utilizando uniones de alta calidad.",
-        "step3": "Instalación",
-        "step3Desc": "Montaje en sitio, calafateado, pintura o teñido final."
+        "step1": "Measurement",
+        "step1Desc": "Precise digital dimension checks on site.",
+        "step2": "Fabrication",
+        "step2Desc": "Cutting and assembling components using high-grade joinery.",
+        "step3": "Installation",
+        "step3Desc": "Seamless mounting, caulking, painting or staining on site."
       },
       "faq": {
-        "q1": "¿Con qué tipos de madera trabajan?",
-        "a1": "Trabajamos con MDF de alta calidad para pintar, maple, roble, nogal y cerezo según el tipo de teñido deseado.",
-        "q2": "¿Diseñan muebles empotrados a medida?",
-        "a2": "Sí, construimos estanterías y centros de entretenimiento adaptados exactamente a las medidas de tu espacio."
+        "q1": "What woods do you work with?",
+        "a1": "We work with premium paint-grade MDF, maple, oak, walnut, and cherry woods depending on desired finish staining.",
+        "q2": "Do you design custom built-ins?",
+        "a2": "Yes, we construct custom shelving and entertainment centers to match your room dimensions exactly."
       }
     },
     "handyman": {
-      "title": "Servicios de Handyman",
-      "seoTitle": "Servicios Profesionales de Handyman y Reparaciones en Kyle, TX",
-      "seoDesc": "Reparaciones confiables en el hogar, instalación de accesorios y mantenimiento menor de plomería y electricidad.",
-      "longDesc": "Resuelve tu lista de tareas pendientes con un servicio profesional y rápido. Desde reemplazo de grifos e instalación de soportes de TV hasta reparaciones de paneles de yeso y cambio de lámparas, trabajamos con el máximo cuidado.",
+      "title": "Handyman Services",
+      "seoTitle": "Professional Handyman & Home Repair in Kyle, TX",
+      "seoDesc": "Reliable professional home repairs, fixture installations, and minor plumbing/electrical detailing.",
+      "longDesc": "Resolve your home repair checklist with high-end, responsive professional service. From faucet swaps and TV mounting to drywall patch ups and fixture updates, we execute with maximum detailing.",
       "benefits": {
-        "b1Title": "Habilidades Multidisciplinarias",
-        "b1Desc": "Capacitados para resolver detalles de plomería, electricidad y reparaciones menores.",
-        "b2Title": "Rápido y Confiable",
-        "b2Desc": "Agenda puntual y resolución eficiente de los problemas de mantenimiento.",
-        "b3Title": "Garantía de Calidad",
-        "b3Desc": "Nos aseguramos de que cada reparación cumpla con las normas de seguridad estándar."
+        "b1Title": "Multidisciplinary Skills",
+        "b1Desc": "Equipped to handle plumbing, electrical, framing, and repair tasks.",
+        "b2Title": "Fast & Efficient",
+        "b2Desc": "Prompt scheduling and quick completion of maintenance issues.",
+        "b3Title": "Licensed Overviews",
+        "b3Desc": "We ensure small repairs comply with standard safety practices."
       },
       "timeline": {
-        "step1": "Revisión de Lista",
-        "step1Desc": "Consolidación de las tareas a realizar y planificación de herramientas.",
-        "step2": "Reparaciones",
-        "step2Desc": "Resolución eficiente de cada tarea durante la visita de servicio.",
-        "step3": "Inspección",
-        "step3Desc": "Prueba final de cada reparación para asegurar un funcionamiento correcto."
+        "step1": "List Review",
+        "step1Desc": "Consolidating your repair points and planning tool requirements.",
+        "step2": "On-Site Repair",
+        "step2Desc": "Efficiently repairing items on your list during the visit.",
+        "step3": "Walkthrough",
+        "step3Desc": "Inspecting completed repairs to verify smooth operation."
       },
       "faq": {
-        "q1": "¿Cuál es su tarifa de servicio?",
-        "a1": "Cobramos una tarifa base por visita de servicio más un costo fijo por tarea, asegurando transparencia en el precio antes de iniciar.",
-        "q2": "¿Traen sus propios materiales?",
-        "a2": "Suministramos consumibles estándar (tornillos, adhesivos, selladores). Los accesorios especiales (como luces o grifos) los provee el cliente."
+        "q1": "What is your hourly rate?",
+        "a1": "We charge a standard base service fee plus a flat rate per task, ensuring transparent pricing before we start.",
+        "q2": "Do you bring your own materials?",
+        "a2": "We supply standard fasteners, caulks, and structural items. Special fixtures (like lights or faucets) are provided by the client."
       }
     },
     "commercial": {
-      "title": "Mejoras Comerciales",
-      "seoTitle": "Remodelación de Oficinas y Locales Comerciales en Kyle, TX",
-      "seoDesc": "Acondicionamiento de oficinas premium, mejoras de inquilinos y remodelaciones comerciales en el centro de Texas.",
-      "longDesc": "Mejora el entorno de tu negocio y la experiencia de tus clientes. Nos especializamos en la remodelación de oficinas modernas, renovaciones de locales comerciales, diseños de salas de exhibición y mejoras estructurales de inquilinos.",
+      "title": "Commercial Improvements",
+      "seoTitle": "Commercial Improvements & Office Remodeling in Kyle, TX",
+      "seoDesc": "High-end commercial office buildouts, retail remodels, tenant improvements. Reliable building contractors.",
+      "longDesc": "Elevate your business environment and client experience. We specialize in modern commercial office buildouts, retail renovations, showroom designs, and structural tenant improvements.",
       "benefits": {
-        "b1Title": "Mínima Interrupción",
-        "b1Desc": "Opciones de horarios flexibles que incluyen turnos nocturnos y de fin de semana.",
-        "b2Title": "Cumplimiento de Códigos",
-        "b2Desc": "Cumplimos estrictamente con los códigos comerciales contra incendios, ADA y del estado de Texas.",
-        "b3Title": "Diseños Inspiradores",
-        "b3Desc": "Espacios modernos y minimalistas diseñados para motivar a tus equipos de trabajo."
+        "b1Title": "Minimal Business Interruption",
+        "b1Desc": "Flexible scheduling options including night and weekend shifts.",
+        "b2Title": "Code Compliance",
+        "b2Desc": "Strict adherence to commercial fire, building, ADA accessibility, and Texas codes.",
+        "b3Title": "Aesthetic Office Layouts",
+        "b3Desc": "Stripe and Vercel inspired clean layout lines that motivate teams."
       },
       "timeline": {
-        "step1": "Planificación",
-        "step1Desc": "Evaluación de planos arquitectónicos y limitaciones de tiempo.",
-        "step2": "Abastecimiento",
-        "step2Desc": "Orden de materiales de grado comercial de alta duración.",
-        "step3": "Construcción",
-        "step3Desc": "Edificación rápida y precisa bajo supervisión de un gerente de proyecto."
+        "step1": "Scope Planning",
+        "step1Desc": "Evaluating architectural blueprints and timeline constraints.",
+        "step2": "Procurement",
+        "step2Desc": "Ordering commercial-grade materials and structural components.",
+        "step3": "Execution",
+        "step3Desc": "Rapid structural and mechanical construction under project management."
       },
       "faq": {
-        "q1": "¿Pueden trabajar fuera del horario comercial?",
-        "a1": "Sí, coordinamos turnos en horarios nocturnos para garantizar que tu negocio pueda seguir operando sin cierres.",
-        "q2": "Desean adaptaciones para cumplir con la norma ADA?",
-        "a2": "Absolutamente, adaptamos baños, rampas y puertas para cumplir con las normas estatales y federales de accesibilidad."
+        "q1": "Can you work outside of business hours?",
+        "a1": "Yes, we coordinate shifts during off-hours to ensure your business remains open and operational.",
+        "q2": "Do you handle ADA compliance upgrades?",
+        "a2": "Absolutely, we specialize in restructuring bathrooms, ramps, and doors to meet ADA and state standards."
       }
     },
     "custom": {
-      "title": "Renovaciones Personalizadas",
-      "seoTitle": "Renovaciones Estructurales y Proyectos Especiales de Lujo en Kyle, TX",
-      "seoDesc": "Renovaciones estructurales de alta complejidad y transformaciones arquitectónicas de lujo en el centro de Texas.",
-      "longDesc": "Lleva a la realidad diseños arquitectónicos complejos. Nuestro equipo de renovaciones personalizadas se encarga de la remoción de muros de carga, inserción de vigas de acero y remodelación estructural integral.",
+      "title": "Custom Renovations",
+      "seoTitle": "Luxury Custom Renovations & Structural Builds in Kyle, TX",
+      "seoDesc": "Bespoke structural remodeling and premium luxury architectural transformations in Central Texas.",
+      "longDesc": "Realize highly custom architectural designs. Our custom renovations team handles complex load-bearing wall removals, ceiling expansions, steel reinforcement inserts, and custom luxury home designs.",
       "benefits": {
-        "b1Title": "Ingeniería Estructural",
-        "b1Desc": "Todos los cambios estructurales cuentan con el respaldo de cálculos de ingeniería certificados.",
-        "b2Title": "Estética Arquitectónica de Lujo",
-        "b2Desc": "Detalles limpios, ventanales integrados y acabados modernos y elegantes.",
-        "b3Title": "Gestión Integral del Proyecto",
-        "b3Desc": "Un administrador dedicado supervisa cada fase de la obra y a los técnicos especializados."
+        "b1Title": "Structural Engineering",
+        "b1Desc": "All architectural changes are backed by certified structural calculations.",
+        "b2Title": "Luxury Architectural Alignment",
+        "b2Desc": "Seamless window integrations, hidden trim details, and premium modern style.",
+        "b3Title": "Comprehensive Project Tracking",
+        "b3Desc": "Dedicated project manager overseeing specialized trades daily."
       },
       "timeline": {
-        "step1": "Diseño e Ingeniería",
-        "step1Desc": "Colaboración con arquitectos y calculistas en los planos del proyecto.",
-        "step2": "Refuerzo Estructural",
-        "step2Desc": "Apuntalamiento de la estructura e instalación de vigas de soporte de acero.",
-        "step3": "Acabados de Lujo",
-        "step3Desc": "Aplicación de revestimientos premium, texturas y ebanistería fina."
+        "step1": "Consultation & Blueprinting",
+        "step1Desc": "Collaborating with architects and engineers on details.",
+        "step2": "Structural Reinforcement",
+        "step2Desc": "Shoring structures, inserting steel beams, and opening layouts.",
+        "step3": "Luxury Finish Out",
+        "step3Desc": "Applying premium coatings, textures, and bespoke joinery."
       },
       "faq": {
         "q1": "¿Trabajan con arquitectos externos?",
-        "a1": "Sí, trabajamos de manera coordinada con arquitectos y diseñadores de interiores independientes para ejecutar sus planos de manera fiel.",
-        "q2": "¿Estas renovaciones cuentan con permisos?",
-        "a2": "Siempre. Tramitamos todos los permisos de construcción, electricidad y plomería, y pasamos las inspecciones del municipio en cada etapa."
+        "a1": "Sí, colaboramos habitualmente con arquitectos y diseñadores independientes para construir según sus planos.",
+        "q2": "¿Las remodelaciones cuentan con permisos?",
+        "a2": "Siempre. Tramitamos todos los permisos estructurales, eléctricos y de plomería, y pasamos las inspecciones municipales en cada etapa."
       }
     }
   },
   "ProjectsData": {
     "modern-texas-remodel": {
-      "title": "La Ocasión Moderna de Texas",
-      "seoTitle": "Remodelación de Cocina Moderna en Austin, TX | Canito Construction LLC",
-      "seoDesc": "Conoce nuestra transformación de cocina de lujo en Austin. Incluye mármol de Calacatta, acabados de roble y detalles premium.",
-      "descShort": "Conversión completa de distribución estructural y diseño de cocina de lujo en Austin, TX.",
-      "descFull": "Este proyecto consistió en remover un muro de carga central para unificar una vieja cocina segmentada con el comedor principal, creando una distribución abierta y de lujo con encimeras de mármol Calacatta.",
-      "challenges": "Sostener la estructura sin columnas visibles en medio de la habitación y redirigir conductos de ventilación.",
-      "solution": "Colocación de una viga I de acero estructural de 22 pies empotrada en el techo y ruteado interno de ventilaciones.",
-      "benefits": "Maximización de la luz natural, doble de espacio de almacenamiento y mejor flujo de tránsito.",
-      "testimonial": "Canito Construction convirtió nuestra cocina en una obra de arte. Ejecución meticulosa."
+      "title": "The Texas Modern Oasis",
+      "seoTitle": "Modern Kitchen Remodel in Austin, TX | Canito Construction LLC",
+      "seoDesc": "Explore our luxury kitchen transformation in Austin. Features Calacatta marble, custom oak trim, and top-tier finishes.",
+      "descShort": "Complete structural layout conversion and luxury kitchen design in Austin, TX.",
+      "descFull": "This project involved removing a central load-bearing brick wall to merge an outdated partitioned kitchen and dining room into a unified, open-concept luxury layout. Using premium materials including Calacatta marble countertops and customized solid oak framing.",
+      "challenges": "Merging structural spans without support pillars and routing mechanical venting invisibly.",
+      "solution": "Inserting a 22-foot structural steel I-beam flush with the ceiling frame, and custom routing exhaust vents through the joists.",
+      "benefits": "Maximized daylight flow, double the cabinet storage capacity, and seamless traffic routing.",
+      "testimonial": "Canito Construction convirtió nuestra cocina en una obra de arte. Ejecución impecable."
     },
     "slate-spa-remodel": {
-      "title": "Remodelación de Baño Slate & Spa",
-      "seoTitle": "Remodelación de Baño de Pizarra en San Marcos, TX",
-      "seoDesc": "Transformación de baño principal estilo spa. Azulejos de pizarra gris carbón y luces LED.",
-      "descShort": "Remodelación de baño principal con piedra pizarra y detalles en dorado en San Marcos, TX.",
-      "descFull": "Transformamos un baño principal pequeño en un refugio de relajación. Cuenta con revestimiento completo de pizarra gris carbón, bañera independiente, tocadores flotantes e iluminación indirecta LED cálida.",
-      "challenges": "Nivelar el contrapiso para los azulejos de gran formato y asegurar un sellado 100% impermeable.",
-      "solution": "Aplicación de mortero autonivelante y doble capa de membrana impermeabilizante líquida de alta calidad.",
-      "benefits": "Piso de pizarra antideslizante, tina de baño relajante y ambiente LED inteligente.",
-      "testimonial": "La alineación de las piedras y el sellado de la ducha son perfectos. Trabajo profesional."
+      "title": "Slate & Spa Bath Remodel",
+      "seoTitle": "Charcoal Slate Bathroom Renovation in San Marcos, TX",
+      "seoDesc": "A premium spa-like bathroom transformation. Large format slate tiles, LED mirrors, and luxury gold details.",
+      "descShort": "Spa-like bathroom build with custom slate tiles and gold details in San Marcos, TX.",
+      "descFull": "We transformed a cramped main bathroom into a spa-like retreat. Features floor-to-ceiling textured charcoal slate tiles, a freestanding soaking tub, floating vanities, and warm indirect LED accent lighting.",
+      "challenges": "Leveling the subfloor for large-format slates and creating absolute waterproof seals behind stone layers.",
+      "solution": "Applying multi-stage self-leveling mortar and a double layer of high-performance liquid membrane waterproofing.",
+      "benefits": "Anti-slip slate flooring, spa-like freestanding bathtub, and smart LED ambiance.",
+      "testimonial": "El sellado del agua de la ducha y la alineación de las piedras son perfectos. Trabajo profesional."
     },
     "facade-renovation-kyle": {
-      "title": "Renovación de Fachada Moderna",
-      "seoTitle": "Remodelación de Fachadas y Revestimiento en Kyle, TX",
-      "seoDesc": "Remodelación exterior en Kyle, Texas. Revestimiento de James Hardie, paneles de cedro y luces empotradas.",
-      "descShort": "Actualización de fachada exterior con madera de cedro y revestimiento en Kyle, TX.",
-      "descFull": "Esta actualización de fachada retiró el viejo revestimiento de madera deteriorado, colocando siding James Hardie resistente junto con paneles de madera de cedro natural para una fachada moderna y cálida.",
-      "challenges": "Alinear las molduras de cedro sobre una estructura original exterior que presentaba desniveles.",
-      "solution": "Instalación de un sistema de rieles de nivelación a medida para crear un plano plano antes de colocar el cedro.",
-      "benefits": "Defensa contra fuego clase A, resistencia a plagas y un gran atractivo visual desde la calle.",
-      "testimonial": "La fachada de madera se ve hermosa. Cambió por completo la apariencia de nuestra casa."
+      "title": "Modern Facade Renovation",
+      "seoTitle": "Luxury Exterior Siding & Remodeling in Kyle, TX",
+      "seoDesc": "Explore this exterior remodeling project in Kyle, Texas. James Hardie siding, cedar paneling, and modern lights.",
+      "descShort": "Exterior siding and modern wood facade upgrade in Kyle, TX.",
+      "descFull": "This facade upgrade stripped old wood siding, replacing it with durable James Hardie fiber-cement siding coupled with natural cedar wood panels for a warm modern aesthetic.",
+      "challenges": "Aligning cedar panel trim lines over uneven original exterior framing.",
+      "solution": "Installing a custom shimming rail system to establish a laser-flat plane before mounting cedar siding.",
+      "benefits": "Class-A fire protection, insect resistance, and striking architectural street appeal.",
+      "testimonial": "La fachada de madera se ve hermosa. Cambió el aspecto de nuestra casa por completo."
     }
   },
   "About": {
-    "title": "Calidad sin Compromiso",
-    "subtitle": "Por qué elegir Canito Construction LLC",
-    "bento1Title": "Precisión Estilo Apple",
-    "bento1Desc": "Tratamos cada proyecto como una obra de arte, enfocándonos en los detalles que otros pasan por alto.",
-    "bento2Title": "A Tiempo y en Presupuesto",
-    "bento2Desc": "Gestión estructurada y cronogramas transparentes para que tu proyecto se complete sin sorpresas.",
-    "bento3Title": "Licenciado y Asegurado",
-    "bento3Desc": "Cumplimiento total con los códigos de construcción de Texas y respaldado por un seguro de responsabilidad civil integral.",
+    "title": "Calidad Absoluta",
+    "subtitle": "Nuestro Estándar",
+    "bento1Title": "Precisión Nivel Apple",
+    "bento1Desc": "Tratamos cada proyecto como arte, enfocándonos en los detalles olvidados.",
+    "bento2Title": "En Tiempo y Presupuesto",
+    "bento2Desc": "Cronogramas estructurados. Entregado sin sorpresas.",
+    "bento3Title": "Licenciados y Asegurados",
+    "bento3Desc": "Con licencia completa, asegurados y en conformidad.",
     "bento4Title": "Proceso Centrado en el Cliente",
-    "bento4Desc": "Colaboramos estrechamente contigo desde la idea de diseño inicial hasta la inspección final."
+    "bento4Desc": "Ejecución colaborativa desde el concepto hasta la entrega."
   },
   "WhyChooseUs": {
     "title": "Por Qué Elegirnos",
-    "subtitle": "Los valores que diferencian nuestros servicios de construcción de lujo.",
+    "subtitle": "Nuestros principios fundamentales de ejecución.",
     "item1Title": "Presupuestos Gratuitos",
-    "item1Desc": "Estructuras de precios transparentes y detalladas, sin cargos ocultos ni sorpresas.",
-    "item2Title": "Materiales de Alta Calidad",
-    "item2Desc": "Suministramos maderas, aceros, piedras y revestimientos premium diseñados para durar.",
-    "item3Title": "Equipo de Confianza",
-    "item3Desc": "Profesionales locales de la construcción en Texas, con licencia y amplia experiencia.",
+    "item1Desc": "Precios transparentes y sin sorpresas.",
+    "item2Title": "Materiales Premium",
+    "item2Desc": "Materiales de alta calidad diseñados para perdurar.",
+    "item3Title": "Equipo Confiable",
+    "item3Desc": "Profesionales verificados de alto nivel en Texas.",
     "item4Title": "Entrega a Tiempo",
-    "item4Desc": "El seguimiento estricto del cronograma garantiza que entreguemos las llaves en la fecha acordada.",
+    "item4Desc": "Entrega puntual en la fecha acordada.",
     "item5Title": "Atención al Detalle",
-    "item5Desc": "Alineaciones meticulosas, juntas perfectas y acabados premium inspeccionados en cada etapa.",
-    "item6Title": "Satisfacción del Cliente",
-    "item6Desc": "Nos comprometemos con tu satisfacción total, ofreciendo garantías completas en nuestro trabajo."
+    "item5Desc": "Inspecciones minuciosas de control de calidad.",
+    "item6Title": "Satisfacción Garantizada",
+    "item6Desc": "Garantías completas en toda nuestra mano de obra."
   },
   "Projects": {
-    "title": "Proyectos Seleccionados",
-    "subtitle": "Una muestra de transformaciones de lujo y excelencia estructural en el centro de Texas."
+    "title": "Obras Seleccionadas",
+    "subtitle": "Muestra de transformaciones de lujo en el centro de Texas."
   },
   "BeforeAfter": {
-    "title": "Showcase Antes / Después",
-    "subtitle": "Desliza la barra para comparar las transformaciones de nuestros proyectos.",
+    "title": "Antes y Después",
+    "subtitle": "Desliza para comparar nuestras transformaciones.",
     "before": "ANTES",
     "after": "DESPUÉS"
   },
   "Testimonials": {
-    "title": "Lo Que Dicen Nuestros Clientes",
-    "subtitle": "Opiniones de propietarios residenciales y comerciales en Texas que confiaron en nosotros.",
+    "title": "Opiniones de Clientes",
+    "subtitle": "Lo que dicen nuestros clientes.",
     "client1": {
-      "comment": "Canito Construction convirtió nuestra vieja cocina en un espacio moderno de lujo. Su atención al detalle fue excepcional.",
+      "comment": "Canito Construction convirtió nuestra cocina anticuada en un espacio moderno y de lujo. Su atención al detalle fue excepcional.",
       "name": "Sarah Jenkins",
       "city": "Austin, TX"
     },
     "client2": {
-      "comment": "Remodelación de oficina comercial altamente profesional. Terminado a tiempo, dentro del presupuesto y superó nuestras expectativas.",
+      "comment": "Remodelación de oficina comercial sumamente profesional. Terminado a tiempo, dentro del presupuesto y superando expectativas.",
       "name": "Marcus Vance",
       "city": "Kyle, TX"
     },
     "client3": {
-      "comment": "El patio de concreto personalizado y el trabajo de revestimiento se ven hermosos. Artesanía verdaderamente premium.",
+      "comment": "El patio de concreto personalizado y el revestimiento exterior se ven hermosos. Excelente mano de obra y gran equipo.",
       "name": "David Miller",
       "city": "San Marcos, TX"
     }
   },
   "Process": {
     "title": "Nuestro Proceso de Trabajo",
-    "subtitle": "El camino estructurado desde la idea inicial hasta la entrega final de llaves.",
-    "step1": { "title": "Consulta", "desc": "Evaluación en el sitio para comprender tus objetivos." },
-    "step2": { "title": "Cotización", "desc": "Desglose detallado de los precios del proyecto." },
-    "step3": { "title": "Planificación", "desc": "Diseño de planos, materiales y cronogramas." },
-    "step4": { "title": "Construcción", "desc": "Fase de edificación con supervisión constante." },
-    "step5": { "title": "Inspección", "desc": "Lista de control final para garantizar la calidad." },
-    "step6": { "title": "Entrega", "desc": "Entrega de tu espacio completamente transformado." }
+    "subtitle": "Un camino claro desde el concepto hasta la entrega.",
+    "step1": { "title": "Consulta", "desc": "Evaluación en el sitio para entender objetivos." },
+    "step2": { "title": "Presupuesto", "desc": "Desglose detallado del costo del proyecto." },
+    "step3": { "title": "Planificación", "desc": "Diseños, materiales y cronogramas." },
+    "step4": { "title": "Construcción", "desc": "Fase de construcción con monitoreo cercano." },
+    "step5": { "title": "Inspección", "desc": "Lista final de control de calidad." },
+    "step6": { "title": "Entrega", "desc": "Entrega de tu espacio totalmente transformado." }
   },
   "FAQ": {
     "title": "Preguntas Frecuentes",
-    "subtitle": "Respuestas rápidas para ayudarte a planificar tu proyecto.",
-    "q1": "¿Están licenciados y asegurados?",
-    "a1": "Sí. Canito Construction LLC está totalmente licenciado y cuenta con un seguro de responsabilidad civil general para tu tranquilidad.",
-    "q2": "¿Ofrecen presupuestos gratuitos?",
-    "a2": "Absolutamente. Programamos visitas personalizadas al sitio y elaboramos presupuestos detallados sin costo alguno.",
-    "q3": "¿Qué áreas de Texas cubren?",
-    "a3": "Servimos principalmente a Kyle, Austin, San Marcos, Buda, New Braunfels y las áreas circundantes del centro de Texas.",
-    "q4": "¿Cuánto toma remodelar una cocina o baño?",
-    "a4": "Un baño estándar toma entre 2 y 3 semanas, mientras que las cocinas de lujo suelen requerir de 3 a 5 semanas según el alcance."
+    "subtitle": "Respuestas rápidas para ayudarte a planificar.",
+    "q1": "¿Cuentan con licencia y seguro?",
+    "a1": "Sí. Canito Construction LLC está totalmente autorizada y cuenta con un seguro de responsabilidad civil comercial completo para su total tranquilidad.",
+    "q2": "¿Ofrecen estimaciones sin costo?",
+    "a2": "Absolutamente. Programamos visitas personalizadas y entregamos presupuestos detallados gratuitos que cubren materiales, tiempos y mano de obra.",
+    "q3": "¿A qué áreas de Texas brindan servicio?",
+    "a3": "Brindamos servicio principalmente en Kyle, Austin, San Marcos, Buda, New Braunfels y las áreas circundantes del centro de Texas.",
+    "q4": "¿Cuánto tarda una remodelación de cocina o baño?",
+    "a4": "Un baño estándar toma de 2 a 3 semanas, mientras que las cocinas de lujo suelen tardar entre 3 y 5 semanas según el alcance."
   },
   "Contact": {
     "title": "Construyamos Algo Extraordinario",
-    "subtitle": "Contáctanos hoy para programar una consulta en el sitio y recibir una propuesta de proyecto personalizada.",
+    "subtitle": "Contáctanos para definir tu propuesta personalizada.",
     "name": "Nombre Completo",
     "email": "Correo Electrónico",
     "phone": "Número de Teléfono",
@@ -443,18 +443,18 @@
     "submit": "Enviar Mensaje",
     "sending": "Enviando...",
     "success": "¡Gracias! Tu mensaje ha sido enviado con éxito. Nos pondremos en contacto contigo a la brevedad.",
-    "error": "Algo salió mal. Por favor, inténtalo de nuevo o contáctanos directamente en info@canitoconstruction.com",
+    "error": "Algo salió mal. Por favor intenta de nuevo o contáctanos en info@canitoconstruction.com",
     "validation": {
       "name": "El nombre debe tener al menos 3 caracteres.",
-      "email": "Por favor ingresa un correo electrónico válido.",
-      "phone": "Por favor ingresa un número de teléfono válido.",
-      "service": "Por favor selecciona un tipo de servicio.",
-      "message": "Por favor describe tu proyecto (mínimo 10 caracteres)."
+      "email": "Ingresa un correo electrónico válido.",
+      "phone": "Ingresa un número de teléfono válido.",
+      "service": "Selecciona un tipo de servicio.",
+      "message": "Describe tu proyecto (mínimo 10 caracteres)."
     }
   },
   "Footer": {
-    "tagline": "Construyendo confianza, excelencia y espacios premium en Kyle y el centro de Texas.",
+    "tagline": "Construyendo espacios premium en el centro de Texas.",
     "rights": "Todos los derechos reservados.",
-    "license": "Licenciado y Asegurado | Kyle, TX"
+    "license": "Con Licencia y Seguro | Kyle, TX"
   }
 }

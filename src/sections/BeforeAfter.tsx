@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import { Section, Container } from "@/components/ui/Layouts";
 import { typography } from "@/design-system/tokens";
 import { fadeUp } from "@/design-system/motion";
@@ -14,6 +14,7 @@ export default function BeforeAfter() {
   const [isDragging, setIsDragging] = useState(false);
   const [containerWidth, setContainerWidth] = useState(1024);
   const containerRef = useRef<HTMLDivElement>(null);
+  const controls = useAnimation();
 
   const handleMove = useCallback((clientX: number) => {
     if (!containerRef.current) return;
@@ -41,8 +42,17 @@ export default function BeforeAfter() {
       }
     });
     resizeObserver.observe(containerRef.current);
-    return () => resizeObserver.disconnect();
-  }, []);
+    
+    // Play subtle hint animation on load to show it's draggable
+    const timer = setTimeout(async () => {
+      await controls.start({ x: [0, -40, 40, 0], transition: { duration: 1.5, ease: "easeInOut" } });
+    }, 1200);
+
+    return () => {
+      resizeObserver.disconnect();
+      clearTimeout(timer);
+    };
+  }, [controls]);
 
   useEffect(() => {
     const handleMouseUp = () => setIsDragging(false);
@@ -63,10 +73,13 @@ export default function BeforeAfter() {
   }, [isDragging, handleMouseMove, handleTouchMove]);
 
   return (
-    <Section id="before-after" className="scroll-mt-20 border-t border-white/5">
+    <Section id="before-after" className="scroll-mt-20 border-t border-white/5 relative overflow-hidden py-32">
+      {/* Soft background light behind the slider */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-[#D4AF37]/3 blur-[140px] pointer-events-none" />
+
       <Container>
         {/* Header */}
-        <div className="max-w-3xl mb-24 text-left">
+        <div className="max-w-3xl mb-16 text-center mx-auto">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -81,7 +94,7 @@ export default function BeforeAfter() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeUp(0.1, 0.6)}
-            className={`${typography.headingXL} text-white mb-6`}
+            className={`${typography.headingXL} text-white mb-4`}
           >
             {t("subtitle")}
           </motion.h2>
@@ -93,7 +106,7 @@ export default function BeforeAfter() {
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeUp(0.2, 0.8)}
-          className="relative w-full aspect-[16/9] max-w-5xl mx-auto rounded-3xl overflow-hidden border border-white/5 shadow-2xl select-none"
+          className="relative w-full aspect-[16/9] max-w-4xl mx-auto rounded-[32px] overflow-hidden border border-white/10 shadow-[0_30px_70px_rgba(0,0,0,0.7)] select-none group cursor-ew-resize"
           ref={containerRef}
           onMouseDown={() => setIsDragging(true)}
           onTouchStart={() => setIsDragging(true)}
@@ -108,7 +121,9 @@ export default function BeforeAfter() {
               className="object-cover"
               priority
             />
-            <span className="absolute bottom-6 right-6 z-20 px-4 py-2 rounded-lg bg-black/70 backdrop-blur-sm text-xs font-bold text-white tracking-widest uppercase border border-white/10">
+            {/* Dynamic focus overlay */}
+            <div className="absolute inset-0 bg-black/10 transition-opacity duration-300 group-hover:opacity-0" />
+            <span className="absolute bottom-6 right-6 z-20 px-4 py-2 rounded-xl bg-black/80 backdrop-blur-md text-xs font-bold text-white tracking-widest uppercase border border-white/10 select-none">
               {t("after")}
             </span>
           </div>
@@ -127,7 +142,8 @@ export default function BeforeAfter() {
                 className="object-cover"
                 priority
               />
-              <span className="absolute bottom-6 left-6 z-20 px-4 py-2 rounded-lg bg-black/70 backdrop-blur-sm text-xs font-bold text-[#D4AF37] tracking-widest uppercase border border-[#D4AF37]/20">
+              <div className="absolute inset-0 bg-black/10 transition-opacity duration-300 group-hover:opacity-0" />
+              <span className="absolute bottom-6 left-6 z-20 px-4 py-2 rounded-xl bg-black/80 backdrop-blur-md text-xs font-bold text-[#D4AF37] tracking-widest uppercase border border-[#D4AF37]/30 select-none">
                 {t("before")}
               </span>
             </div>
@@ -135,12 +151,22 @@ export default function BeforeAfter() {
 
           {/* Slider line separator */}
           <div
-            className="absolute inset-y-0 w-[2px] bg-white z-20 cursor-ew-resize flex items-center justify-center pointer-events-none"
+            className="absolute inset-y-0 w-[2px] bg-white/30 z-20 pointer-events-none"
             style={{ left: `${sliderPosition}%` }}
           >
-            <div className="w-10 h-10 rounded-full bg-white text-black font-bold text-lg flex items-center justify-center shadow-lg border border-black/10 select-none">
-              ↔
-            </div>
+            {/* Elegant Glow line */}
+            <div className="absolute inset-y-0 -left-[1px] w-[4px] bg-gradient-to-b from-transparent via-[#D4AF37] to-transparent blur-[1px]" />
+
+            {/* Slider Dragging Handle */}
+            <motion.div
+              animate={controls}
+              className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-14 h-14 rounded-full bg-black/80 backdrop-blur-lg border border-[#D4AF37]/50 shadow-[0_0_20px_rgba(212,175,55,0.4)] flex items-center justify-center pointer-events-none group-hover:scale-110 transition-transform duration-300"
+            >
+              <div className="flex items-center justify-center gap-1.5 text-white">
+                <span className="text-xs text-[#D4AF37] font-extrabold select-none">◀</span>
+                <span className="text-xs text-white font-extrabold select-none">▶</span>
+              </div>
+            </motion.div>
           </div>
         </motion.div>
       </Container>

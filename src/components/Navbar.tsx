@@ -122,7 +122,7 @@ export default function Navbar() {
 
           {/* Quick Call */}
           <a
-            href="tel:+15125550199"
+            href="tel:+15125637287"
             className="text-xs font-semibold text-white hover:text-[#D4AF37] transition-colors flex items-center gap-1.5 focus:outline-none focus:text-[#D4AF37]"
             aria-label="Call Canito Construction"
           >
@@ -212,11 +212,11 @@ export default function Navbar() {
             {/* Drawer CTAs / Contacts */}
             <div className="space-y-6 border-t border-white/5 pt-6">
               <a
-                href="tel:+15125550199"
+                href="tel:+15125637287"
                 className="w-full py-4 border border-white/10 hover:border-white rounded-xl text-white font-semibold text-center flex items-center justify-center gap-2 transition-colors"
               >
                 <Icon name="phone" className="w-4 h-4 text-[#D4AF37]" />
-                Call Now: (512) 555-0199
+                Call Now: (512) 563-7287
               </a>
               <Button
                 variant="primary"

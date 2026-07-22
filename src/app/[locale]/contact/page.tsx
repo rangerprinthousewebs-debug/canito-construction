@@ -39,14 +39,14 @@ export default async function ContactPage({ params }: PageProps) {
     {
       icon: "phone" as const,
       title: "Call Direct",
-      value: "(512) 555-0199",
-      href: "tel:+15125550199",
+      value: "(512) 563-7287",
+      href: "tel:+15125637287",
     },
     {
       icon: "users" as const,
       title: "WhatsApp Chat",
       value: "Chat on WhatsApp",
-      href: "https://wa.me/15125550199?text=Hola,%20me%20interesa%20solicitar%20una%20cotizacion%20para%20un%20proyecto.",
+      href: "https://wa.me/15125637287?text=Hola,%20me%20interesa%20solicitar%20una%20cotizacion%20para%20un%20proyecto.",
     },
     {
       icon: "briefcase" as const,

@@ -129,7 +129,7 @@ export default function ContactForm() {
             type="tel"
             {...register("phone")}
             className="px-5 py-4 rounded-xl bg-white/[0.03] border border-white/10 text-white focus:outline-none focus:border-[#D4AF37]/50"
-            placeholder="(512) 555-0199"
+            placeholder="(512) 563-7287"
           />
           {errors.phone && <span className="text-xs text-red-500 mt-1">{errors.phone.message}</span>}
         </div>

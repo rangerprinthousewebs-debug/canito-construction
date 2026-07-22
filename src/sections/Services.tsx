@@ -6,7 +6,6 @@ import Icon, { IconType } from "@/components/ui/Icon";
 import Card from "@/components/ui/Card";
 import { Section, Container, Grid } from "@/components/ui/Layouts";
 import { typography } from "@/design-system/tokens";
-import { fadeUp } from "@/design-system/motion";
 
 interface ServiceItem {
   icon: IconType;
@@ -65,26 +64,44 @@ export default function Services() {
     },
   ];
 
+  // Custom blur reveal variants for grid items
+  const itemReveal = (idx: number) => ({
+    hidden: { opacity: 0, y: 30, filter: "blur(8px)" },
+    visible: {
+      opacity: 1,
+      y: 0,
+      filter: "blur(0px)",
+      transition: {
+        duration: 0.8,
+        delay: idx * 0.05,
+        ease: [0.16, 1, 0.3, 1] as const,
+      },
+    },
+  });
+
   return (
-    <Section id="services" className="scroll-mt-20">
+    <Section id="services" className="scroll-mt-20 py-32 relative">
+      {/* Background glowing light for Services */}
+      <div className="absolute top-[20%] right-[-10%] w-[400px] h-[400px] rounded-full bg-[#D4AF37]/2 blur-[120px] pointer-events-none" />
+
       <Container>
         {/* Section Header */}
-        <div className="max-w-3xl mb-24 text-left">
+        <div className="max-w-3xl mb-20 text-center mx-auto">
           <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeUp(0, 0.6)}
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
             className="text-xs uppercase tracking-widest text-[#D4AF37] font-semibold mb-4"
           >
             {t("title")}
           </motion.div>
           <motion.h2
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeUp(0.1, 0.6)}
-            className={`${typography.headingXL} text-white mb-6`}
+            initial={{ opacity: 0, y: 20, filter: "blur(6px)" }}
+            whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            className={`${typography.headingXL} text-white font-extrabold tracking-tight mb-6`}
           >
             {t("subtitle")}
           </motion.h2>
@@ -97,18 +114,18 @@ export default function Services() {
               key={index}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeUp(index * 0.05, 0.6)}
+              viewport={{ once: true, margin: "-50px" }}
+              variants={itemReveal(index)}
             >
-              <Card variant="service" className="h-full">
+              <Card variant="service" className="h-full group">
                 {/* Gold glow effect on hover */}
                 <div className="absolute top-0 right-0 w-24 h-24 rounded-full bg-[#D4AF37]/5 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 
-                <div className="mb-8 p-4 w-14 h-14 rounded-2xl bg-white/[0.03] border border-white/10 group-hover:border-[#D4AF37]/30 text-[#9B9B9B] group-hover:text-[#D4AF37] transition-all duration-300 flex items-center justify-center">
-                  <Icon name={service.icon} className="w-6 h-6" />
+                <div className="mb-6 p-4 w-12 h-12 rounded-2xl bg-white/[0.03] border border-white/10 group-hover:border-[#D4AF37]/30 text-[#9B9B9B] group-hover:text-[#D4AF37] transition-all duration-300 flex items-center justify-center">
+                  <Icon name={service.icon} className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
                 </div>
                 
-                <h3 className="text-xl font-bold text-white mb-4 tracking-tight group-hover:text-[#D4AF37] transition-colors duration-300">
+                <h3 className="text-lg font-bold text-white mb-2 tracking-tight group-hover:text-[#D4AF37] transition-colors duration-300">
                   {t(service.titleKey)}
                 </h3>
                 

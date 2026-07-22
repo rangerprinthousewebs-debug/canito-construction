@@ -9,15 +9,13 @@ export default function SchemaOrg() {
     "logo": "https://www.canitoconstruction.com/images/logo.png",
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+1-512-555-0199",
+      "telephone": "+1-512-563-7287",
       "contactType": "customer service",
       "areaServed": "US",
       "availableLanguage": ["English", "Spanish"],
     },
     "sameAs": [
-      "https://www.facebook.com/canitoconstruction",
-      "https://www.instagram.com/canitoconstruction",
-      "https://www.linkedin.com/company/canitoconstruction",
+      "https://www.facebook.com/share/191LngeyZF/?mibextid=wwXIfr",
     ],
   };
 
@@ -28,14 +26,12 @@ export default function SchemaOrg() {
     "image": "https://www.canitoconstruction.com/images/project2.jpg",
     "@id": "https://www.canitoconstruction.com/#localbusiness",
     "url": "https://www.canitoconstruction.com",
-    "telephone": "+1-512-555-0199",
+    "telephone": "+1-512-563-7287",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "100 Center St",
       "addressLocality": "Kyle",
       "addressRegion": "TX",
-      "postalCode": "78640",
       "addressCountry": "US",
     },
     "geo": {

@@ -163,7 +163,7 @@ export default async function ServicePage({ params }: PageProps) {
                   <Icon name="arrowRight" className="w-4 h-4" />
                 </a>
                 <a
-                  href="tel:+15125550199"
+                  href="tel:+15125637287"
                   className="px-6 py-3 border border-white/10 hover:border-white rounded-full text-white font-bold text-xs uppercase tracking-wider flex items-center gap-2 transition-colors"
                 >
                   <Icon name="phone" className="w-4 h-4 text-[#D4AF37]" />
@@ -367,11 +367,11 @@ export default async function ServicePage({ params }: PageProps) {
 
                 {/* Quick Call */}
                 <a
-                  href="tel:+15125550199"
+                  href="tel:+15125637287"
                   className="w-full py-4 border border-[#D4AF37]/30 hover:border-[#D4AF37] bg-[#D4AF37]/5 rounded-xl text-[#D4AF37] font-bold text-xs uppercase tracking-wider text-center flex items-center justify-center gap-2 transition-colors duration-300"
                 >
                   <Icon name="phone" className="w-4 h-4" />
-                  Call (512) 555-0199
+                  Call (512) 563-7287
                 </a>
 
               </aside>

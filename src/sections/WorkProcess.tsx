@@ -4,7 +4,6 @@ import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { Section, Container } from "@/components/ui/Layouts";
 import { typography } from "@/design-system/tokens";
-import { fadeUp } from "@/design-system/motion";
 
 interface Step {
   num: string;
@@ -24,52 +23,67 @@ export default function WorkProcess() {
     { num: "06", titleKey: "step6.title", descKey: "step6.desc" },
   ];
 
+  const itemReveal = (idx: number) => ({
+    hidden: { opacity: 0, y: 25, filter: "blur(6px)" },
+    visible: {
+      opacity: 1,
+      y: 0,
+      filter: "blur(0px)",
+      transition: {
+        duration: 0.8,
+        delay: idx * 0.08,
+        ease: [0.16, 1, 0.3, 1] as const,
+      },
+    },
+  });
+
   return (
-    <Section id="process" className="scroll-mt-20 border-t border-white/5 bg-[#0B0B0B]">
+    <Section id="process" className="scroll-mt-20 border-t border-white/5 bg-[#0B0B0B] py-32 relative">
+      <div className="absolute bottom-[20%] right-[10%] w-[350px] h-[350px] rounded-full bg-[#D4AF37]/1 blur-[115px] pointer-events-none" />
+
       <Container>
         {/* Header */}
-        <div className="max-w-3xl mb-24 text-left">
+        <div className="max-w-3xl mb-20 text-center mx-auto">
           <motion.div
-            initial="hidden"
-            whileInView="visible"
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            variants={fadeUp(0, 0.6)}
+            transition={{ duration: 0.6 }}
             className="text-xs uppercase tracking-widest text-[#D4AF37] font-semibold mb-4"
           >
             {t("title")}
           </motion.div>
           <motion.h2
-            initial="hidden"
-            whileInView="visible"
+            initial={{ opacity: 0, y: 20, filter: "blur(6px)" }}
+            whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             viewport={{ once: true }}
-            variants={fadeUp(0.1, 0.6)}
-            className={`${typography.headingXL} text-white mb-6`}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            className={`${typography.headingXL} text-white font-extrabold tracking-tight mb-6`}
           >
             {t("subtitle")}
           </motion.h2>
         </div>
 
-        {/* Process Timeline */}
-        {/* Desktop View */}
+        {/* Process Timeline - Desktop View */}
         <div className="hidden lg:grid grid-cols-6 gap-6 relative">
-          <div className="absolute top-[35px] left-8 right-8 h-[1px] bg-white/10 z-0" />
+          <div className="absolute top-[35px] left-8 right-8 h-[2px] bg-gradient-to-r from-[#D4AF37]/10 via-[#D4AF37]/30 to-[#D4AF37]/10 z-0" />
           {steps.map((step, idx) => (
             <motion.div
               key={idx}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeUp(idx * 0.1, 0.6)}
-              className="text-left relative z-10 flex flex-col"
+              viewport={{ once: true, margin: "-50px" }}
+              variants={itemReveal(idx)}
+              className="text-center relative z-10 flex flex-col items-center group cursor-default"
             >
               {/* Dot / Number indicator */}
-              <div className="w-[70px] h-[70px] rounded-full bg-[#0B0B0B] border-2 border-white/10 text-white flex items-center justify-center font-bold text-sm tracking-widest mb-6 group hover:border-[#D4AF37] transition-colors duration-300">
+              <div className="w-[70px] h-[70px] rounded-full bg-[#0B0B0B] border-2 border-white/10 text-white flex items-center justify-center font-bold text-sm tracking-widest mb-6 group-hover:border-[#D4AF37] group-hover:shadow-[0_0_15px_rgba(212,175,55,0.25)] transition-all duration-500">
                 {step.num}
               </div>
-              <h3 className="text-lg font-bold text-white mb-2 tracking-tight">
+              <h3 className="text-base font-bold text-white mb-2 tracking-tight group-hover:text-[#D4AF37] transition-colors duration-300">
                 {t(step.titleKey)}
               </h3>
-              <p className="text-xs text-[#9B9B9B] leading-relaxed">
+              <p className="text-xs text-[#9B9B9B] leading-relaxed px-2 group-hover:text-white/80 transition-colors duration-300">
                 {t(step.descKey)}
               </p>
             </motion.div>
@@ -84,18 +98,18 @@ export default function WorkProcess() {
               key={idx}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeUp(idx * 0.1, 0.6)}
-              className="text-left relative z-10 flex flex-col"
+              viewport={{ once: true, margin: "-50px" }}
+              variants={itemReveal(idx)}
+              className="text-left relative z-10 flex flex-col group"
             >
               {/* Circle indicator */}
-              <div className="absolute left-[-42px] top-0 w-8 h-8 rounded-full bg-[#0B0B0B] border border-white/20 text-[#D4AF37] flex items-center justify-center font-bold text-[10px] tracking-widest">
+              <div className="absolute left-[-42px] top-0 w-8 h-8 rounded-full bg-[#0B0B0B] border border-white/20 text-[#9B9B9B] group-hover:border-[#D4AF37] group-hover:text-[#D4AF37] flex items-center justify-center font-bold text-[10px] tracking-widest transition-all duration-300">
                 {step.num}
               </div>
-              <h3 className="text-lg font-bold text-white mb-2 tracking-tight">
+              <h3 className="text-lg font-bold text-white mb-2 tracking-tight group-hover:text-[#D4AF37] transition-colors duration-300">
                 {t(step.titleKey)}
               </h3>
-              <p className="text-sm text-[#9B9B9B] leading-relaxed">
+              <p className="text-sm text-[#9B9B9B] leading-relaxed group-hover:text-white/80 transition-colors duration-300">
                 {t(step.descKey)}
               </p>
             </motion.div>

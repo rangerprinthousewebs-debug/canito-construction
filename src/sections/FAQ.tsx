@@ -5,7 +5,6 @@ import { useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 import { Section, Container } from "@/components/ui/Layouts";
 import { typography } from "@/design-system/tokens";
-import { fadeUp } from "@/design-system/motion";
 
 interface FAQItemProps {
   question: string;
@@ -19,15 +18,18 @@ function FAQItem({ question, answer, isOpen, onClick }: FAQItemProps) {
     <div className="border-b border-white/5 py-6">
       <button
         onClick={onClick}
-        className="w-full flex items-center justify-between text-left focus:outline-none group"
+        className="w-full flex items-center justify-between text-left focus:outline-none group cursor-pointer"
         aria-expanded={isOpen}
       >
         <span className="text-base sm:text-lg font-semibold text-white group-hover:text-[#D4AF37] transition-colors duration-200">
           {question}
         </span>
-        <span className="text-[#D4AF37] font-bold text-xl ml-4 select-none">
-          {isOpen ? "−" : "+"}
-        </span>
+        <motion.span 
+          animate={{ rotate: isOpen ? 45 : 0 }}
+          className="text-[#D4AF37] font-bold text-xl ml-4 select-none"
+        >
+          ＋
+        </motion.span>
       </button>
       
       <AnimatePresence initial={false}>
@@ -36,10 +38,10 @@ function FAQItem({ question, answer, isOpen, onClick }: FAQItemProps) {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
+            transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
             className="overflow-hidden"
           >
-            <p className="pt-4 text-sm sm:text-base text-[#9B9B9B] leading-relaxed max-w-4xl">
+            <p className="pt-4 text-sm text-[#9B9B9B] leading-relaxed max-w-4xl">
               {answer}
             </p>
           </motion.div>
@@ -64,7 +66,6 @@ export default function FAQ() {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  // Schema.org FAQPage JSON-LD structured data
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -79,31 +80,31 @@ export default function FAQ() {
   };
 
   return (
-    <Section id="faq" className="scroll-mt-20 border-t border-white/5 bg-[#0B0B0B]">
-      {/* FAQ Schema injection */}
+    <Section id="faq" className="scroll-mt-20 border-t border-white/5 bg-[#0B0B0B] py-32 relative">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <div className="absolute bottom-[10%] left-[20%] w-[300px] h-[300px] rounded-full bg-[#D4AF37]/1 blur-[110px] pointer-events-none" />
 
       <Container>
         {/* Header */}
-        <div className="max-w-3xl mb-16 text-left">
+        <div className="max-w-3xl mb-16 text-center mx-auto">
           <motion.div
-            initial="hidden"
-            whileInView="visible"
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            variants={fadeUp(0, 0.6)}
+            transition={{ duration: 0.6 }}
             className="text-xs uppercase tracking-widest text-[#D4AF37] font-semibold mb-4"
           >
             {t("title")}
           </motion.div>
           <motion.h2
-            initial="hidden"
-            whileInView="visible"
+            initial={{ opacity: 0, y: 20, filter: "blur(6px)" }}
+            whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             viewport={{ once: true }}
-            variants={fadeUp(0.1, 0.6)}
-            className={`${typography.headingXL} text-white mb-6`}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            className={`${typography.headingXL} text-white font-extrabold tracking-tight mb-6`}
           >
             {t("subtitle")}
           </motion.h2>
@@ -111,11 +112,11 @@ export default function FAQ() {
 
         {/* Accordion container */}
         <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={fadeUp(0.2, 0.6)}
-          className="max-w-4xl mr-auto text-left"
+          initial={{ opacity: 0, y: 30, filter: "blur(8px)" }}
+          whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 1, delay: 0.2 }}
+          className="max-w-3xl mx-auto text-left"
         >
           {faqs.map((faq, index) => (
             <FAQItem

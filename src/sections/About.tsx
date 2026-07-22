@@ -6,7 +6,6 @@ import Icon, { IconType } from "@/components/ui/Icon";
 import Card from "@/components/ui/Card";
 import { Section, Container } from "@/components/ui/Layouts";
 import { typography } from "@/design-system/tokens";
-import { fadeUp } from "@/design-system/motion";
 
 interface AboutCard {
   icon: IconType;
@@ -45,26 +44,43 @@ export default function About() {
     },
   ];
 
+  const itemReveal = (idx: number) => ({
+    hidden: { opacity: 0, y: 30, filter: "blur(8px)" },
+    visible: {
+      opacity: 1,
+      y: 0,
+      filter: "blur(0px)",
+      transition: {
+        duration: 0.8,
+        delay: idx * 0.08,
+        ease: [0.16, 1, 0.3, 1] as const,
+      },
+    },
+  });
+
   return (
-    <Section id="about" className="scroll-mt-20">
+    <Section id="about" className="scroll-mt-20 py-32 relative">
+      {/* Background glowing light for About */}
+      <div className="absolute bottom-[10%] left-[-10%] w-[450px] h-[450px] rounded-full bg-[#D4AF37]/2 blur-[130px] pointer-events-none" />
+
       <Container>
         {/* Header */}
-        <div className="max-w-3xl mb-24 text-left">
+        <div className="max-w-3xl mb-20 text-center mx-auto">
           <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeUp(0, 0.6)}
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
             className="text-xs uppercase tracking-widest text-[#D4AF37] font-semibold mb-4"
           >
             {t("subtitle")}
           </motion.div>
           <motion.h2
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeUp(0.1, 0.6)}
-            className={`${typography.headingXL} text-white mb-6`}
+            initial={{ opacity: 0, y: 20, filter: "blur(6px)" }}
+            whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            className={`${typography.headingXL} text-white font-extrabold tracking-tight mb-6`}
           >
             {t("title")}
           </motion.h2>
@@ -77,20 +93,20 @@ export default function About() {
               key={index}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeUp(index * 0.1, 0.6)}
+              viewport={{ once: true, margin: "-50px" }}
+              variants={itemReveal(index)}
               className={card.size}
             >
-              <Card variant="feature" className="h-full">
+              <Card variant="feature" className="h-full flex flex-col justify-between p-8 group">
                 <div>
                   <div className="mb-6 text-[#9B9B9B] group-hover:text-[#D4AF37] transition-colors duration-300">
-                    <Icon name={card.icon} className="w-8 h-8 stroke-[1.5]" />
+                    <Icon name={card.icon} className="w-8 h-8 stroke-[1.5] group-hover:scale-110 transition-transform duration-300" />
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-3 tracking-tight">
+                  <h3 className="text-lg font-bold text-white mb-2 tracking-tight group-hover:text-[#D4AF37] transition-colors duration-300">
                     {card.title}
                   </h3>
                 </div>
-                <p className="text-[#9B9B9B] leading-relaxed text-sm">
+                <p className="text-[#9B9B9B] leading-relaxed text-sm group-hover:text-white/80 transition-colors duration-300">
                   {card.description}
                 </p>
               </Card>

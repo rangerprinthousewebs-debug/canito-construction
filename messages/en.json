@@ -11,12 +11,12 @@
     "getQuote": "Get a Quote"
   },
   "Hero": {
-    "badge": "Premium Construction & Remodeling",
-    "title": "Crafting Architectural Masterpieces",
-    "subtitle": "High-end residential and commercial remodeling in Kyle, Texas. Designed for those who value quality above all else.",
+    "badge": "Premium Craftsmanship",
+    "title": "Architectural Perfection",
+    "subtitle": "High-end remodeling in Central Texas. For those who value quality.",
     "ctaPrimary": "Request Quote",
     "ctaSecondary": "View Projects",
-    "trust": "Trusted by hundreds of homeowners and businesses across Central Texas."
+    "trust": "Trusted across Central Texas."
   },
   "Stats": {
     "experience": "Years of Excellence",
@@ -25,42 +25,42 @@
   },
   "Services": {
     "title": "Our Services",
-    "subtitle": "Tailored construction solutions built to last, engineered with precision and premium craftsmanship.",
+    "subtitle": "Tailored construction solutions engineered with absolute precision.",
     "interior": {
       "title": "Interior Remodeling",
-      "description": "Bespoke kitchen updates, master bathroom conversions, and high-end living area modifications."
+      "description": "Bespoke kitchen, bathroom, and living spaces."
     },
     "exterior": {
       "title": "Exterior Remodeling",
-      "description": "Sophisticated siding improvements, luxury patios, modern decks, and structural facade renovations."
+      "description": "Modern siding, luxury patios, and facades."
     },
     "painting": {
       "title": "Painting",
-      "description": "Flawless custom interior and exterior painting services using high-grade eco-friendly paints."
+      "description": "Flawless custom finishes and coatings."
     },
     "drywall": {
       "title": "Drywall",
-      "description": "Seamless drywall installation, framing, precise tape & float finishing, and texture matching."
+      "description": "Seamless framing, hanging, and finishing."
     },
     "flooring": {
       "title": "Flooring",
-      "description": "Premium hardwood installation, luxury vinyl planks (LVP), and large format custom tiling."
+      "description": "Premium hardwood, LVP, and custom tile."
     },
     "carpentry": {
       "title": "Carpentry",
-      "description": "Detailed custom cabinetry, custom built-ins, modern trim work, and finish carpentry."
+      "description": "Custom cabinetry and architectural trim."
     },
     "handyman": {
       "title": "Handyman Services",
-      "description": "Responsive professional home repairs, fixture installations, and detailing maintenance."
+      "description": "Responsive, high-end repairs and maintenance."
     },
     "commercial": {
       "title": "Commercial Improvements",
-      "description": "Premium commercial office buildouts, retail remodels, and tenant improvements."
+      "description": "High-end retail and office buildouts."
     },
     "custom": {
       "title": "Custom Renovations",
-      "description": "Tailor-made structural renovations engineered around luxury modern architecture."
+      "description": "Structural alterations and custom designs."
     }
   },
   "ServicesPagesData": {
@@ -68,7 +68,7 @@
       "title": "Interior Remodeling",
       "seoTitle": "Luxury Interior Remodeling in Kyle, TX | Canito Construction LLC",
       "seoDesc": "Renovate your kitchen, bathrooms, and living areas with premium Texas craftsmanship. Get your free estimate today.",
-      "longDesc": "Elevate your daily living with our bespoke interior remodeling services. We specialize in custom luxury kitchen renovations, spa-like bathroom transformations, and complete spatial redesigns that reflect your personal aesthetics and functional requirements.",
+      "longDesc": "Bespoke interior remodeling services. We specialize in custom luxury kitchen renovations, spa-like bathroom transformations, and complete spatial redesigns that reflect your personal aesthetics.",
       "benefits": {
         "b1Title": "Custom Cabinetry & Finishes",
         "b1Desc": "Handcrafted details, custom wood selections, and premium paints/sealants.",
@@ -353,46 +353,46 @@
     }
   },
   "About": {
-    "title": "Uncompromising Quality",
-    "subtitle": "Why choose Canito Construction LLC",
+    "title": "Absolute Quality",
+    "subtitle": "Our Standard",
     "bento1Title": "Apple-Level Precision",
-    "bento1Desc": "We treat every project as a piece of art, focusing on details that others overlook.",
+    "bento1Desc": "We treat every project as art, focusing on overlooked details.",
     "bento2Title": "On Time, On Budget",
-    "bento2Desc": "Structured management and transparent timelines ensure your project is completed without surprises.",
+    "bento2Desc": "Structured timelines. Delivered without surprises.",
     "bento3Title": "Licensed & Insured",
-    "bento3Desc": "Fully compliant with Texas state building codes and backed by comprehensive liability insurance.",
+    "bento3Desc": "Fully licensed, insured, and compliant.",
     "bento4Title": "Client-Centric Process",
-    "bento4Desc": "We collaborate closely with you from initial design concept to final walk-through."
+    "bento4Desc": "Collaborative execution from concept to completion."
   },
   "WhyChooseUs": {
     "title": "Why Choose Us",
-    "subtitle": "The values that differentiate our luxury construction services.",
+    "subtitle": "Our core principles of execution.",
     "item1Title": "Free Estimates",
-    "item1Desc": "Transparent, itemized pricing structures without hidden charges or assumptions.",
+    "item1Desc": "Transparent pricing without surprises.",
     "item2Title": "High Quality Materials",
-    "item2Desc": "We source premium woods, steels, stones, and coatings designed to stand the test of time.",
+    "item2Desc": "Premium materials designed to endure.",
     "item3Title": "Reliable Team",
-    "item3Desc": "Background-checked, licensed, and highly experienced local Texas construction professionals.",
+    "item3Desc": "Background-checked, elite professionals.",
     "item4Title": "On Time Delivery",
-    "item4Desc": "Strict project timeline tracking ensures we hand over keys precisely on the agreed date.",
+    "item4Desc": "Prompt delivery on the agreed date.",
     "item5Title": "Attention to Detail",
-    "item5Desc": "Meticulous alignment, seamless joints, and premium finishes inspected at every stage.",
+    "item5Desc": "Meticulous quality control checks.",
     "item6Title": "Customer Satisfaction",
-    "item6Desc": "We commit to absolute satisfaction, providing complete warranties on our workmanship."
+    "item6Desc": "Full warranties on all workmanship."
   },
   "Projects": {
     "title": "Selected Works",
-    "subtitle": "A showcase of luxury transformations and structural excellence in Central Texas."
+    "subtitle": "A showcase of luxury transformations in Central Texas."
   },
   "BeforeAfter": {
     "title": "Before / After Showcase",
-    "subtitle": "Drag the slider to compare our high-quality project transformations.",
+    "subtitle": "Drag to compare our transformations.",
     "before": "BEFORE",
     "after": "AFTER"
   },
   "Testimonials": {
     "title": "What Our Clients Say",
-    "subtitle": "Hear from local Texas residential and commercial owners who trusted our services.",
+    "subtitle": "What our clients say.",
     "client1": {
       "comment": "Canito Construction converted our outdated kitchen into a modern luxury space. Their attention to detail was outstanding.",
       "name": "Sarah Jenkins",
@@ -411,17 +411,17 @@
   },
   "Process": {
     "title": "Our Work Process",
-    "subtitle": "A structured client journey from initial concept design to final key delivery.",
-    "step1": { "title": "Consultation", "desc": "On-site assessment to understand your goals." },
-    "step2": { "title": "Estimate", "desc": "Detailed project pricing layout breakdown." },
-    "step3": { "title": "Planning", "desc": "Architecture layouts, materials, schedules." },
+    "subtitle": "A clear path from concept to key delivery.",
+    "step1": { "title": "Consultation", "desc": "On-site assessment to understand goals." },
+    "step2": { "title": "Estimate", "desc": "Detailed project pricing layout." },
+    "step3": { "title": "Planning", "desc": "Layouts, materials, schedules." },
     "step4": { "title": "Construction", "desc": "Precision building phase monitored closely." },
-    "step5": { "title": "Inspection", "desc": "Final walkthrough checklist check for quality." },
-    "step6": { "title": "Delivery", "desc": "Handover of your fully transformed space." }
+    "step5": { "title": "Inspection", "desc": "Final checklist check for quality." },
+    "step6": { "title": "Delivery", "desc": "Handover of your transformed space." }
   },
   "FAQ": {
     "title": "Frequently Asked Questions",
-    "subtitle": "Quick answers to help you plan your construction project.",
+    "subtitle": "Quick answers to help you plan.",
     "q1": "Are you licensed and insured?",
     "a1": "Yes. Canito Construction LLC is fully licensed and carries comprehensive commercial general liability insurance to guarantee peace of mind.",
     "q2": "Do you provide free estimates?",
@@ -433,7 +433,7 @@
   },
   "Contact": {
     "title": "Let's Build Something Extraordinary",
-    "subtitle": "Get in touch today to schedule an on-site consultation and receive a customized project proposal.",
+    "subtitle": "Contact us to define your custom proposal.",
     "name": "Full Name",
     "email": "Email Address",
     "phone": "Phone Number",
@@ -453,7 +453,7 @@
     }
   },
   "Footer": {
-    "tagline": "Building trust, excellence, and premium spaces across Kyle and Central Texas.",
+    "tagline": "Building premium spaces across Central Texas.",
     "rights": "All rights reserved.",
     "license": "Licensed & Insured | Kyle, TX"
   }
