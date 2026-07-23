@@ -91,7 +91,7 @@ export default function About() {
               </div>
               
               {/* Large high-res Brand Logo */}
-              <div className="relative z-10 w-[40%] aspect-square flex items-center justify-center">
+              <div className="relative z-10 w-[64%] aspect-square flex items-center justify-center">
                 <Image
                   src="/logo.png"
                   alt="Canito Construction Brand Logo"
