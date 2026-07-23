@@ -350,6 +350,17 @@
       "solution": "Installing a custom shimming rail system to establish a laser-flat plane before mounting cedar siding.",
       "benefits": "Class-A fire protection, insect resistance, and striking architectural street appeal.",
       "testimonial": "La fachada de madera se ve hermosa. Cambió el aspecto de nuestra casa por completo."
+    },
+    "modern-custom-home": {
+      "title": "Casa Personalizada Moderna",
+      "seoTitle": "Construcción de Casa Nueva en Buda, TX | Canito Construction LLC",
+      "seoDesc": "Descubra nuestra galería de construcción de casa nueva en Buda. Construido con estructura premium, cimentación de concreto y diseños eficientes.",
+      "descShort": "Construcción residencial nueva y estructura de concreto en Buda, TX.",
+      "descFull": "Un proyecto completo de construcción residencial nueva desde cero. Cuenta con cimentación de concreto reforzado, estructura de madera estructural de primera calidad, ventanas eficientes de doble vidrio y revestimiento exterior moderno.",
+      "challenges": "Coordinar tolerancias estructurales precisas en terrenos inclinados durante las primeras fases de estructura.",
+      "solution": "Utilizar sistemas avanzados de nivelación láser y amarres estructurales para garantizar un plano completamente nivelado.",
+      "benefits": "Construido para durar décadas, excelente clasificación de aislamiento y belleza arquitectónica moderna.",
+      "testimonial": "Construir nuestra casa con Canito Construction LLC fue una experiencia sin estrés. Altamente recomendado su equipo profesional."
     }
   },
   "About": {
@@ -450,11 +461,17 @@
       "phone": "Ingresa un número de teléfono válido.",
       "service": "Selecciona un tipo de servicio.",
       "message": "Describe tu proyecto (mínimo 10 caracteres)."
-    }
+    },
+    "hoursTitle": "Horario de Atención",
+    "hoursDays": "Lunes – Sábado",
+    "hoursTime": "8:00 AM – 5:00 PM"
   },
   "Footer": {
     "tagline": "Construyendo espacios premium en el centro de Texas.",
     "rights": "Todos los derechos reservados.",
-    "license": "Con Licencia y Seguro | Kyle, TX"
+    "license": "Con Licencia y Seguro | Kyle, TX",
+    "hoursTitle": "Horario de Atención",
+    "hoursDays": "Lunes – Sábado",
+    "hoursTime": "8:00 AM – 5:00 PM"
   }
 }

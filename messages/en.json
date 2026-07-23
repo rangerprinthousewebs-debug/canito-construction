@@ -350,6 +350,17 @@
       "solution": "Installing a custom shimming rail system to establish a laser-flat plane before mounting cedar siding.",
       "benefits": "Class-A fire protection, insect resistance, and striking architectural street appeal.",
       "testimonial": "The wood facade looks beautiful. It changed the look of our home completely."
+    },
+    "modern-custom-home": {
+      "title": "Modern Custom Home",
+      "seoTitle": "New Custom Home Construction in Buda, TX | Canito Construction LLC",
+      "seoDesc": "Discover our new construction residential showcase in Buda. Built with premium framing, concrete foundation, and energy-efficient designs.",
+      "descShort": "Custom new residential build and concrete framing in Buda, TX.",
+      "descFull": "A full custom residential build from the ground up. This project features a reinforced concrete foundation, premium structural wood framing, double-glazed energy efficient windows, and modern exterior cladding.",
+      "challenges": "Coordinating precise structural tolerances on sloping terrain during early framing phases.",
+      "solution": "Utilizing advanced laser leveling systems and structural tie-downs to ensure a completely flat plane.",
+      "benefits": "Built to last decades, outstanding insulation rating, and modern architectural beauty.",
+      "testimonial": "Building our custom home with Canito Construction LLC was a stress-free experience. Highly recommend their professional team."
     }
   },
   "About": {
@@ -450,11 +461,17 @@
       "phone": "Please enter a valid phone number.",
       "service": "Please select a service type.",
       "message": "Please describe your project (minimum 10 characters)."
-    }
+    },
+    "hoursTitle": "Business Hours",
+    "hoursDays": "Monday – Saturday",
+    "hoursTime": "8:00 AM – 5:00 PM"
   },
   "Footer": {
     "tagline": "Building premium spaces across Central Texas.",
     "rights": "All rights reserved.",
-    "license": "Licensed & Insured | Kyle, TX"
+    "license": "Licensed & Insured | Kyle, TX",
+    "hoursTitle": "Business Hours",
+    "hoursDays": "Monday – Saturday",
+    "hoursTime": "8:00 AM – 5:00 PM"
   }
 }

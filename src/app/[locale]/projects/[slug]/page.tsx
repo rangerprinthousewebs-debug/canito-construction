@@ -158,6 +158,24 @@ export default async function ProjectPage({ params }: PageProps) {
                   </div>
                 )}
 
+                {/* Project Video Showcase if present */}
+                {project.videoUrl && (
+                  <div className="border-t border-white/5 pt-12">
+                    <h3 className={`${typography.headingM} text-white mb-8`}>
+                      Project Video Walkthrough
+                    </h3>
+                    <div className="relative aspect-video rounded-3xl overflow-hidden border border-white/10 glass-card bg-black">
+                      <video
+                        src={project.videoUrl}
+                        controls
+                        preload="metadata"
+                        className="w-full h-full object-cover"
+                        playsInline
+                      />
+                    </div>
+                  </div>
+                )}
+
                 {/* Project Image Gallery */}
                 <div className="border-t border-white/5 pt-12">
                   <h3 className={`${typography.headingM} text-white mb-8`}>

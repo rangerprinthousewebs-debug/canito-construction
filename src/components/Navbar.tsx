@@ -80,17 +80,17 @@ export default function Navbar() {
     >
       <div className={`${containerWidth} flex items-center justify-between`}>
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-3" aria-label="Canito Construction LLC Home">
+        <Link href="/" className="flex items-center space-x-3 group" aria-label="Canito Construction LLC Home">
           <Image
             src="/logo-small.png"
             alt="Canito Construction LLC Logo"
-            width={32}
-            height={32}
-            className="w-8 h-8 object-contain rounded-md"
+            width={48}
+            height={48}
+            className="w-10 h-10 md:w-12 md:h-12 object-contain rounded-md transition-transform duration-300 group-hover:scale-105"
             priority
           />
-          <span className="font-extrabold text-lg tracking-tight text-white flex items-center">
-            CANITO<span className="text-[#D4AF37] ml-1">CONSTRUCTION LLC</span>
+          <span className="font-extrabold text-xl md:text-2xl tracking-tight text-white flex items-center transition-colors group-hover:text-white/90">
+            CANITO<span className="text-[#D4AF37] ml-1.5">CONSTRUCTION LLC</span>
           </span>
         </Link>
 

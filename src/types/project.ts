@@ -16,4 +16,6 @@ export interface Project {
   area: string;
   materials: string[];
   tags: string[];
+  projectType: "remodeling" | "construction";
+  videoUrl?: string;
 }

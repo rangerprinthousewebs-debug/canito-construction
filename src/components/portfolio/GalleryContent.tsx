@@ -16,14 +16,13 @@ export default function GalleryContent({ locale }: GalleryContentProps) {
 
   const filters = [
     { label: locale === "es" ? "Todos" : "All Works", value: "all" },
-    { label: locale === "es" ? "Interior" : "Interior", value: "interior-remodeling" },
-    { label: locale === "es" ? "Exterior" : "Exterior", value: "exterior-remodeling" },
-    { label: locale === "es" ? "Pisos" : "Flooring", value: "flooring" },
+    { label: locale === "es" ? "Remodelaciones" : "Remodeling Projects", value: "remodeling" },
+    { label: locale === "es" ? "Construcción" : "Construction Projects", value: "construction" },
   ];
 
   const filteredProjects = activeFilter === "all"
     ? projectsRegistry
-    : projectsRegistry.filter((p) => p.associatedService === activeFilter);
+    : projectsRegistry.filter((p) => p.projectType === activeFilter);
 
   return (
     <div>

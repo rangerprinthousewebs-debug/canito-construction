@@ -14,7 +14,8 @@ import { Link } from "@/i18n/routing";
 
 export default function Showcase() {
   const t = useTranslations("Projects");
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "start" });
+  const [activeTab, setActiveTab] = React.useState<"remodeling" | "construction">("remodeling");
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false, align: "start" });
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
@@ -24,13 +25,25 @@ export default function Showcase() {
     if (emblaApi) emblaApi.scrollNext();
   }, [emblaApi]);
 
+  // Re-initialize Embla carousel when activeTab changes to reset scroll position
+  React.useEffect(() => {
+    if (emblaApi) {
+      emblaApi.reInit();
+      emblaApi.scrollTo(0, false);
+    }
+  }, [activeTab, emblaApi]);
+
+  const filteredProjects = projectsRegistry.filter(
+    (project) => project.projectType === activeTab
+  );
+
   return (
     <Section id="projects" className="overflow-hidden scroll-mt-20 py-32 relative">
       <div className="absolute top-[20%] right-[-10%] w-[380px] h-[380px] rounded-full bg-[#D4AF37]/1 blur-[110px] pointer-events-none" />
 
       <Container>
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div className="max-w-xl text-left">
             <motion.div
               initial={{ opacity: 0, y: 15 }}
@@ -71,6 +84,30 @@ export default function Showcase() {
           </div>
         </div>
 
+        {/* Categories Tab Selector */}
+        <div className="flex items-center justify-start gap-4 mb-12 border-b border-white/5 pb-6 select-none">
+          <button
+            onClick={() => setActiveTab("remodeling")}
+            className={`px-6 py-3 rounded-xl text-xs font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer ${
+              activeTab === "remodeling"
+                ? "bg-[#D4AF37] text-black shadow-lg shadow-[#D4AF37]/15"
+                : "bg-white/[0.01] border border-white/10 text-[#9B9B9B] hover:text-white hover:border-white/30"
+            }`}
+          >
+            Remodeling Projects
+          </button>
+          <button
+            onClick={() => setActiveTab("construction")}
+            className={`px-6 py-3 rounded-xl text-xs font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer ${
+              activeTab === "construction"
+                ? "bg-[#D4AF37] text-black shadow-lg shadow-[#D4AF37]/15"
+                : "bg-white/[0.01] border border-white/10 text-[#9B9B9B] hover:text-white hover:border-white/30"
+            }`}
+          >
+            Construction Projects
+          </button>
+        </div>
+
         {/* Embla Carousel Viewport */}
         <motion.div 
           initial={{ opacity: 0, y: 30, filter: "blur(8px)" }}
@@ -81,7 +118,7 @@ export default function Showcase() {
           ref={emblaRef}
         >
           <div className="flex -ml-6">
-            {projectsRegistry.map((project, index) => (
+            {filteredProjects.map((project, index) => (
               <div
                 key={project.slug}
                 className="flex-[0_0_100%] min-w-0 pl-6 sm:flex-[0_0_50%] lg:flex-[0_0_33.33%]"

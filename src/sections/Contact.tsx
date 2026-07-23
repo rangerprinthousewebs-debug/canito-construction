@@ -143,6 +143,16 @@ export default function Contact() {
                   <span className="text-white font-medium">Kyle, Texas & Surrounding Areas</span>
                 </div>
               </div>
+
+              <div className="flex items-center space-x-4 group">
+                <div className="p-4 rounded-xl bg-white/[0.01] border border-white/10 group-hover:border-[#D4AF37]/30 text-[#9B9B9B] group-hover:text-[#D4AF37] transition-all duration-300">
+                  <Icon name="clock" className="w-5 h-5" />
+                </div>
+                <div>
+                  <div className="text-xs uppercase tracking-wider text-[#9B9B9B] font-semibold mb-0.5">{t("hoursTitle")}</div>
+                  <span className="text-white font-medium">{t("hoursDays")} ({t("hoursTime")})</span>
+                </div>
+              </div>
             </div>
           </div>
 
