@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import Icon, { IconType } from "@/components/ui/Icon";
 import Card from "@/components/ui/Card";
 import { Section, Container } from "@/components/ui/Layouts";
@@ -46,12 +46,12 @@ export default function About() {
     },
   ];
 
+  // GPU-only animations: no filter/blur
   const itemReveal = (idx: number) => ({
-    hidden: { opacity: 0, y: 30, filter: "blur(8px)" },
+    hidden: { opacity: 0, y: 30 },
     visible: {
       opacity: 1,
       y: 0,
-      filter: "blur(0px)",
       transition: {
         duration: 0.8,
         delay: idx * 0.08,
@@ -70,7 +70,7 @@ export default function About() {
           
           {/* Left Column: Visual Brand Composition (Logo Card) */}
           <div className="lg:col-span-5 w-full flex justify-center order-2 lg:order-1">
-            <motion.div
+            <m.div
               initial={{ opacity: 0, scale: 0.95, y: 15 }}
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
@@ -81,11 +81,12 @@ export default function About() {
               <div className="absolute inset-0 z-0 opacity-15 transition-transform duration-700 ease-out group-hover:scale-105 pointer-events-none">
                 <Image
                   src="/images/hero-house.jpg"
-                  alt="Architectural detailing"
+                  alt="Architectural detailing background"
                   fill
                   sizes="(max-width: 1024px) 100vw, 40vw"
-                  className="object-cover grayscale filter contrast-125"
-                  priority
+                  className="object-cover grayscale contrast-125"
+                  loading="lazy"
+                  quality={60}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0B] via-[#0B0B0B]/40 to-transparent" />
               </div>
@@ -94,19 +95,21 @@ export default function About() {
               <div className="relative z-10 w-[64%] aspect-square flex items-center justify-center">
                 <Image
                   src="/logo.png"
-                  alt="Canito Construction Brand Logo"
+                  alt="Canito Construction LLC logo"
                   fill
                   sizes="(max-width: 768px) 150px, (max-width: 1024px) 200px, 250px"
-                  className="object-contain filter drop-shadow-[0_0_15px_rgba(255,255,255,0.05)]"
+                  className="object-contain"
+                  loading="lazy"
+                  quality={85}
                 />
               </div>
-            </motion.div>
+            </m.div>
           </div>
 
           {/* Right Column: About header and details grid */}
           <div className="lg:col-span-7 flex flex-col order-1 lg:order-2 text-left">
             <div className="mb-10">
-              <motion.div
+              <m.div
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -114,22 +117,22 @@ export default function About() {
                 className="text-xs uppercase tracking-widest text-[#D4AF37] font-semibold mb-4"
               >
                 {t("subtitle")}
-              </motion.div>
-              <motion.h2
-                initial={{ opacity: 0, y: 20, filter: "blur(6px)" }}
-                whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+              </m.div>
+              <m.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.1 }}
                 className={`${typography.headingXL} text-white font-extrabold tracking-tight mb-4`}
               >
                 {t("title")}
-              </motion.h2>
+              </m.h2>
             </div>
 
             {/* Reorganized Bento Cards Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {cards.map((card, index) => (
-                <motion.div
+                <m.div
                   key={index}
                   initial="hidden"
                   whileInView="visible"
@@ -150,7 +153,7 @@ export default function About() {
                       {card.description}
                     </p>
                   </Card>
-                </motion.div>
+                </m.div>
               ))}
             </div>
           </div>

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence } from "framer-motion";
 import { Section, Container } from "@/components/ui/Layouts";
 import { typography } from "@/design-system/tokens";
 
@@ -24,17 +24,17 @@ function FAQItem({ question, answer, isOpen, onClick }: FAQItemProps) {
         <span className="text-base sm:text-lg font-semibold text-white group-hover:text-[#D4AF37] transition-colors duration-200">
           {question}
         </span>
-        <motion.span 
+        <m.span 
           animate={{ rotate: isOpen ? 45 : 0 }}
           className="text-[#D4AF37] font-bold text-xl ml-4 select-none"
         >
           ＋
-        </motion.span>
+        </m.span>
       </button>
       
       <AnimatePresence initial={false}>
         {isOpen && (
-          <motion.div
+          <m.div
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
@@ -44,7 +44,7 @@ function FAQItem({ question, answer, isOpen, onClick }: FAQItemProps) {
             <p className="pt-4 text-sm text-[#9B9B9B] leading-relaxed max-w-4xl">
               {answer}
             </p>
-          </motion.div>
+          </m.div>
         )}
       </AnimatePresence>
     </div>
@@ -90,7 +90,7 @@ export default function FAQ() {
       <Container>
         {/* Header */}
         <div className="max-w-3xl mb-16 text-center mx-auto">
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -98,22 +98,22 @@ export default function FAQ() {
             className="text-xs uppercase tracking-widest text-[#D4AF37] font-semibold mb-4"
           >
             {t("title")}
-          </motion.div>
-          <motion.h2
-            initial={{ opacity: 0, y: 20, filter: "blur(6px)" }}
-            whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+          </m.div>
+          <m.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.1 }}
             className={`${typography.headingXL} text-white font-extrabold tracking-tight mb-6`}
           >
             {t("subtitle")}
-          </motion.h2>
+          </m.h2>
         </div>
 
         {/* Accordion container */}
-        <motion.div
-          initial={{ opacity: 0, y: 30, filter: "blur(8px)" }}
-          whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+        <m.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 1, delay: 0.2 }}
           className="max-w-3xl mx-auto text-left"
@@ -127,7 +127,7 @@ export default function FAQ() {
               onClick={() => handleToggle(index)}
             />
           ))}
-        </motion.div>
+        </m.div>
       </Container>
     </Section>
   );

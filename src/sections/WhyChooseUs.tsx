@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import Icon, { IconType } from "@/components/ui/Icon";
 import { Section, Container, Grid } from "@/components/ui/Layouts";
 import { typography } from "@/design-system/tokens";
@@ -24,12 +24,12 @@ export default function WhyChooseUs() {
     { icon: "shield", titleKey: "item6Title", descKey: "item6Desc" },
   ];
 
+  // GPU-only animations: no filter/blur
   const itemReveal = (idx: number) => ({
-    hidden: { opacity: 0, y: 25, filter: "blur(6px)" },
+    hidden: { opacity: 0, y: 25 },
     visible: {
       opacity: 1,
       y: 0,
-      filter: "blur(0px)",
       transition: {
         duration: 0.7,
         delay: idx * 0.08,
@@ -45,7 +45,7 @@ export default function WhyChooseUs() {
       <Container>
         {/* Header */}
         <div className="max-w-3xl mb-20 text-center mx-auto">
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -53,22 +53,22 @@ export default function WhyChooseUs() {
             className="text-xs uppercase tracking-widest text-[#D4AF37] font-semibold mb-4"
           >
             {t("title")}
-          </motion.div>
-          <motion.h2
-            initial={{ opacity: 0, y: 20, filter: "blur(6px)" }}
-            whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+          </m.div>
+          <m.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay: 0.1 }}
             className={`${typography.headingXL} text-white font-extrabold tracking-tight mb-6`}
           >
             {t("subtitle")}
-          </motion.h2>
+          </m.h2>
         </div>
 
         {/* Advantages Checklist Grid */}
         <Grid cols={3} gap={8}>
           {items.map((item, index) => (
-            <motion.div
+            <m.div
               key={index}
               initial="hidden"
               whileInView="visible"
@@ -87,7 +87,7 @@ export default function WhyChooseUs() {
                   {t(item.descKey)}
                 </p>
               </div>
-            </motion.div>
+            </m.div>
           ))}
         </Grid>
       </Container>

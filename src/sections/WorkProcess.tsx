@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { Section, Container } from "@/components/ui/Layouts";
 import { typography } from "@/design-system/tokens";
 
@@ -23,12 +23,12 @@ export default function WorkProcess() {
     { num: "06", titleKey: "step6.title", descKey: "step6.desc" },
   ];
 
+  // GPU-only animations: no filter/blur
   const itemReveal = (idx: number) => ({
-    hidden: { opacity: 0, y: 25, filter: "blur(6px)" },
+    hidden: { opacity: 0, y: 25 },
     visible: {
       opacity: 1,
       y: 0,
-      filter: "blur(0px)",
       transition: {
         duration: 0.8,
         delay: idx * 0.08,
@@ -44,7 +44,7 @@ export default function WorkProcess() {
       <Container>
         {/* Header */}
         <div className="max-w-3xl mb-20 text-center mx-auto">
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -52,23 +52,23 @@ export default function WorkProcess() {
             className="text-xs uppercase tracking-widest text-[#D4AF37] font-semibold mb-4"
           >
             {t("title")}
-          </motion.div>
-          <motion.h2
-            initial={{ opacity: 0, y: 20, filter: "blur(6px)" }}
-            whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+          </m.div>
+          <m.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.1 }}
             className={`${typography.headingXL} text-white font-extrabold tracking-tight mb-6`}
           >
             {t("subtitle")}
-          </motion.h2>
+          </m.h2>
         </div>
 
         {/* Process Timeline - Desktop View */}
         <div className="hidden lg:grid grid-cols-6 gap-6 relative">
           <div className="absolute top-[35px] left-8 right-8 h-[2px] bg-gradient-to-r from-[#D4AF37]/10 via-[#D4AF37]/30 to-[#D4AF37]/10 z-0" />
           {steps.map((step, idx) => (
-            <motion.div
+            <m.div
               key={idx}
               initial="hidden"
               whileInView="visible"
@@ -86,7 +86,7 @@ export default function WorkProcess() {
               <p className="text-xs text-[#9B9B9B] leading-relaxed px-2 group-hover:text-white/80 transition-colors duration-300">
                 {t(step.descKey)}
               </p>
-            </motion.div>
+            </m.div>
           ))}
         </div>
 
@@ -94,7 +94,7 @@ export default function WorkProcess() {
         <div className="lg:hidden flex flex-col space-y-12 relative pl-8">
           <div className="absolute top-0 bottom-0 left-[15px] w-[1px] bg-white/10 z-0" />
           {steps.map((step, idx) => (
-            <motion.div
+            <m.div
               key={idx}
               initial="hidden"
               whileInView="visible"
@@ -112,7 +112,7 @@ export default function WorkProcess() {
               <p className="text-sm text-[#9B9B9B] leading-relaxed group-hover:text-white/80 transition-colors duration-300">
                 {t(step.descKey)}
               </p>
-            </motion.div>
+            </m.div>
           ))}
         </div>
       </Container>

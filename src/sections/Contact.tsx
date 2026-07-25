@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as zod from "zod";
@@ -58,12 +58,12 @@ export default function Contact() {
     setIsSubmitting(false);
   };
 
+  // GPU-only: no filter/blur
   const cinematicReveal = (delay = 0) => ({
-    hidden: { opacity: 0, y: 25, filter: "blur(6px)" },
+    hidden: { opacity: 0, y: 25 },
     visible: {
       opacity: 1,
       y: 0,
-      filter: "blur(0px)",
       transition: {
         duration: 0.8,
         delay,
@@ -83,7 +83,7 @@ export default function Contact() {
           {/* Info Side */}
           <div className="lg:col-span-5 flex flex-col justify-between text-left">
             <div>
-              <motion.div
+              <m.div
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
@@ -91,8 +91,8 @@ export default function Contact() {
                 className="text-xs uppercase tracking-widest text-[#D4AF37] font-semibold mb-4"
               >
                 {t("title")}
-              </motion.div>
-              <motion.h2
+              </m.div>
+              <m.h2
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
@@ -100,8 +100,8 @@ export default function Contact() {
                 className={`${typography.headingXL} text-white mb-6 font-extrabold tracking-tight`}
               >
                 {t("title")}
-              </motion.h2>
-              <motion.p
+              </m.h2>
+              <m.p
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
@@ -109,7 +109,7 @@ export default function Contact() {
                 className="text-[#9B9B9B] leading-relaxed mb-10 text-sm"
               >
                 {t("subtitle")}
-              </motion.p>
+              </m.p>
             </div>
 
             {/* Direct Contacts Info */}
@@ -158,7 +158,7 @@ export default function Contact() {
 
           {/* Form Side */}
           <div className="lg:col-span-7">
-            <motion.div
+            <m.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
@@ -241,7 +241,7 @@ export default function Contact() {
                 )}
 
               </form>
-            </motion.div>
+            </m.div>
           </div>
 
         </Grid>

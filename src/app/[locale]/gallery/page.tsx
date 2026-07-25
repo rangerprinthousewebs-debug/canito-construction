@@ -19,10 +19,11 @@ export async function generateMetadata({ params }: PageProps) {
     title: locale === "es" ? "Galería de Proyectos Premium | Canito Construction LLC" : "Premium Projects Gallery | Canito Construction LLC",
     description: locale === "es" ? "Explore nuestro portafolio de remodelaciones de lujo en Austin y Kyle, TX." : "Explore our luxury remodeling and structural construction portfolio in Austin and Kyle, TX.",
     alternates: {
-      canonical: "/gallery",
+      canonical: `https://www.canitoconstruction.com/${locale}/gallery`,
       languages: {
-        en: "/en/gallery",
-        es: "/es/gallery",
+        en: "https://www.canitoconstruction.com/en/gallery",
+        es: "https://www.canitoconstruction.com/es/gallery",
+        "x-default": "https://www.canitoconstruction.com/en/gallery",
       },
     },
   };

@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import Card from "@/components/ui/Card";
 import { Container } from "@/components/ui/Layouts";
 import { fadeUp } from "@/design-system/motion";
@@ -20,7 +20,7 @@ export default function Stats() {
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
           {statItems.map((stat, idx) => (
-            <motion.div
+            <m.div
               key={idx}
               initial="hidden"
               whileInView="visible"
@@ -35,7 +35,7 @@ export default function Stats() {
                   {stat.label}
                 </span>
               </Card>
-            </motion.div>
+            </m.div>
           ))}
         </div>
       </Container>

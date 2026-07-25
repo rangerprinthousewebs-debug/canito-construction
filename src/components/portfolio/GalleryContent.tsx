@@ -50,6 +50,7 @@ export default function GalleryContent({ locale }: GalleryContentProps) {
             key={project.slug}
             href={`/projects/${project.slug}`}
             className="group block"
+            prefetch={false}
           >
             <Card variant="project" className="aspect-[4/3] relative rounded-3xl overflow-hidden border border-white/5 flex flex-col justify-end p-8">
               <Image
@@ -59,6 +60,7 @@ export default function GalleryContent({ locale }: GalleryContentProps) {
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 className="object-cover absolute inset-0 transition-transform duration-700 group-hover:scale-105 z-0"
                 loading="lazy"
+                quality={75}
               />
 
               <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0B] via-[#0B0B0B]/40 to-transparent z-10" />

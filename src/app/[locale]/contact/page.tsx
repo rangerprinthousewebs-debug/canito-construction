@@ -23,10 +23,11 @@ export async function generateMetadata({ params }: PageProps) {
     title: locale === "es" ? "Contacto y Cotizaciones | Canito Construction LLC" : "Contact & Request Estimates | Canito Construction LLC",
     description: locale === "es" ? "Solicite una cotización de remodelación gratuita. Contáctenos hoy en Kyle y Austin, TX." : "Request a free remodeling quote. Contact our team today in Kyle and Austin, TX.",
     alternates: {
-      canonical: "/contact",
+      canonical: `https://www.canitoconstruction.com/${locale}/contact`,
       languages: {
-        en: "/en/contact",
-        es: "/es/contact",
+        en: "https://www.canitoconstruction.com/en/contact",
+        es: "https://www.canitoconstruction.com/es/contact",
+        "x-default": "https://www.canitoconstruction.com/en/contact",
       },
     },
   };

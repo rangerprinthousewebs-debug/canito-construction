@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/routing";
 import { useParams } from "next/navigation";
 import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence } from "framer-motion";
 import Icon from "@/components/ui/Icon";
 import Button from "@/components/ui/Button";
 import { containerWidth, zIndex, transition } from "@/design-system/tokens";
@@ -170,7 +170,7 @@ export default function Navbar() {
       {/* Mobile Drawer Panel */}
       <AnimatePresence>
         {isOpen && (
-          <motion.div
+          <m.div
             id="mobile-navigation-drawer"
             role="dialog"
             aria-modal="true"
@@ -231,7 +231,7 @@ export default function Navbar() {
                 {t("getQuote")}
               </Button>
             </div>
-          </motion.div>
+          </m.div>
         )}
       </AnimatePresence>
     </header>

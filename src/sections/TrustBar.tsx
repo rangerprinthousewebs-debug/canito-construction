@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import Icon from "@/components/ui/Icon";
 import { Container } from "@/components/ui/Layouts";
 import { fadeUp } from "@/design-system/motion";
@@ -20,7 +20,7 @@ export default function TrustBar() {
       <Container>
         <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-6 text-sm text-[#9B9B9B] font-semibold tracking-wider uppercase select-none">
           {trustItems.map((item, idx) => (
-            <motion.div
+            <m.div
               key={idx}
               initial="hidden"
               whileInView="visible"
@@ -30,7 +30,7 @@ export default function TrustBar() {
             >
               <Icon name={item.icon} className="w-4 h-4 text-[#D4AF37]" />
               <span>{item.label}</span>
-            </motion.div>
+            </m.div>
           ))}
         </div>
       </Container>

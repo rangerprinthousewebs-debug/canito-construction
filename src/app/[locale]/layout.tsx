@@ -7,11 +7,13 @@ import {NextIntlClientProvider} from 'next-intl';
 import SchemaOrg from "@/components/SchemaOrg";
 import Analytics from "@/components/Analytics";
 import MobileStickyCTA from "@/components/MobileStickyCTA";
+import MotionProvider from "@/components/MotionProvider";
 
 const manrope = Manrope({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700', '800'],
   variable: '--font-manrope',
+  display: 'swap',
 });
 
 export default async function LocaleLayout({
@@ -39,10 +41,13 @@ export default async function LocaleLayout({
       </head>
       <body className="bg-[#0B0B0B] text-white font-sans min-h-screen selection:bg-[#D4AF37] selection:text-[#0B0B0B] overflow-x-hidden pb-20 md:pb-0">
         <NextIntlClientProvider messages={messages}>
-          {children}
-          <MobileStickyCTA />
+          <MotionProvider>
+            {children}
+            <MobileStickyCTA />
+          </MotionProvider>
         </NextIntlClientProvider>
       </body>
     </html>
   );
 }
+

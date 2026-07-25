@@ -43,7 +43,7 @@ export default function Footer() {
 
           {/* Quick Links Column */}
           <div className="md:col-span-2">
-            <h4 className="text-xs uppercase tracking-widest text-[#D4AF37] font-bold mb-6">Company</h4>
+            <h3 className="text-xs uppercase tracking-widest text-[#D4AF37] font-bold mb-6">Company</h3>
             <ul className="space-y-3">
               {["services", "about", "projects", "contact"].map((link) => (
                 <li key={link}>
@@ -61,7 +61,7 @@ export default function Footer() {
 
           {/* Services Quick Links Column */}
           <div className="md:col-span-3">
-            <h4 className="text-xs uppercase tracking-widest text-[#D4AF37] font-bold mb-6">Services</h4>
+            <h3 className="text-xs uppercase tracking-widest text-[#D4AF37] font-bold mb-6">Services</h3>
             <ul className="space-y-3 text-sm text-[#9B9B9B]">
               <li>
                 <a href="#services" className="hover:text-white transition-colors">Residential Remodeling</a>
@@ -81,7 +81,7 @@ export default function Footer() {
           {/* Social Links / Contacts Column */}
           <div className="md:col-span-2 flex flex-col space-y-6">
             <div>
-              <h4 className="text-xs uppercase tracking-widest text-[#D4AF37] font-bold mb-4">Follow Us</h4>
+              <h3 className="text-xs uppercase tracking-widest text-[#D4AF37] font-bold mb-4">Follow Us</h3>
               <div className="flex items-center space-x-3">
                 <a href="https://www.facebook.com/share/191LngeyZF/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook Link" className="p-3 rounded-full bg-white/[0.02] border border-white/10 hover:border-[#D4AF37] text-[#9B9B9B] hover:text-[#D4AF37] transition-all">
                   <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -91,7 +91,7 @@ export default function Footer() {
               </div>
             </div>
             <div>
-              <h4 className="text-xs uppercase tracking-widest text-[#D4AF37] font-bold mb-3">{t("hoursTitle")}</h4>
+              <h3 className="text-xs uppercase tracking-widest text-[#D4AF37] font-bold mb-3">{t("hoursTitle")}</h3>
               <div className="text-sm text-[#9B9B9B] space-y-1">
                 <p className="font-medium text-white/90">{t("hoursDays")}</p>
                 <p className="text-xs">{t("hoursTime")}</p>

@@ -3,7 +3,7 @@
 import React, { useCallback } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import useEmblaCarousel from "embla-carousel-react";
 import Icon from "@/components/ui/Icon";
 import Card from "@/components/ui/Card";
@@ -45,7 +45,7 @@ export default function Showcase() {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div className="max-w-xl text-left">
-            <motion.div
+            <m.div
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -53,16 +53,16 @@ export default function Showcase() {
               className="text-xs uppercase tracking-widest text-[#D4AF37] font-semibold mb-4"
             >
               {t("title")}
-            </motion.div>
-            <motion.h2
-              initial={{ opacity: 0, y: 20, filter: "blur(6px)" }}
-              whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            </m.div>
+            <m.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.1 }}
               className={`${typography.headingXL} text-white font-extrabold tracking-tight`}
             >
               {t("subtitle")}
-            </motion.h2>
+            </m.h2>
           </div>
 
           {/* Carousel Arrows with Glow indicators */}
@@ -109,9 +109,9 @@ export default function Showcase() {
         </div>
 
         {/* Embla Carousel Viewport */}
-        <motion.div 
-          initial={{ opacity: 0, y: 30, filter: "blur(8px)" }}
-          whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+        <m.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 1, delay: 0.2 }}
           className="overflow-hidden" 
@@ -123,7 +123,7 @@ export default function Showcase() {
                 key={project.slug}
                 className="flex-[0_0_100%] min-w-0 pl-6 sm:flex-[0_0_50%] lg:flex-[0_0_33.33%]"
               >
-                <Link href={`/projects/${project.slug}`} className="block">
+                <Link href={`/projects/${project.slug}`} className="block" prefetch={false}>
                   <Card variant="project" className="relative group overflow-hidden border border-white/10 glass-card">
                     {/* Image Background with premium smooth zoom */}
                     <Image
@@ -132,7 +132,8 @@ export default function Showcase() {
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-105 z-0"
-                      priority={index === 0}
+                      loading={index === 0 ? "eager" : "lazy"}
+                      quality={75}
                     />
 
                     {/* Gradient Overlay for visual stability */}
@@ -152,7 +153,7 @@ export default function Showcase() {
               </div>
             ))}
           </div>
-        </motion.div>
+        </m.div>
       </Container>
     </Section>
   );

@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { m, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
 import Icon from "@/components/ui/Icon";
@@ -20,7 +20,7 @@ export default function Hero() {
     offset: ["start start", "end start"],
   });
 
-  // Parallax elements
+  // Parallax elements — GPU-only: only opacity and transform
   const yText = useTransform(scrollYProgress, [0, 1], [0, 150]);
   const opacityText = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
   const scaleImage = useTransform(scrollYProgress, [0, 1], [1, 1.05]);
@@ -32,13 +32,12 @@ export default function Hero() {
     "Quality Guaranteed",
   ] as const;
 
-  // Custom blur reveal variants
+  // Cinematic reveal — GPU-only: no filter/blur, only opacity + y transform
   const cinematicReveal = (delay = 0) => ({
-    hidden: { opacity: 0, y: 30, filter: "blur(12px)" },
+    hidden: { opacity: 0, y: 30 },
     visible: {
       opacity: 1,
       y: 0,
-      filter: "blur(0px)",
       transition: {
         duration: 1.2,
         delay,
@@ -57,7 +56,7 @@ export default function Hero() {
 
       <Container className="relative z-10 text-center flex flex-col items-center justify-center flex-grow">
         {/* Animated Badge */}
-        <motion.div
+        <m.div
           initial="hidden"
           animate="visible"
           variants={cinematicReveal(0.1)}
@@ -67,10 +66,10 @@ export default function Hero() {
           <Badge variant="premium">
             ✨ {t("badge")}
           </Badge>
-        </motion.div>
+        </m.div>
 
         {/* Huge Apple-Style Title */}
-        <motion.h1
+        <m.h1
           initial="hidden"
           animate="visible"
           variants={cinematicReveal(0.25)}
@@ -79,10 +78,10 @@ export default function Hero() {
         >
           <span className="text-gradient-gold block sm:inline">{t("title")}</span>
           <span className="text-[#D4AF37]">.</span>
-        </motion.h1>
+        </m.h1>
 
         {/* Minimal Subtitle */}
-        <motion.p
+        <m.p
           initial="hidden"
           animate="visible"
           variants={cinematicReveal(0.4)}
@@ -90,10 +89,10 @@ export default function Hero() {
           className="text-base sm:text-lg text-[#9B9B9B] max-w-xl leading-relaxed mb-8 px-4"
         >
           {t("subtitle")}
-        </motion.p>
+        </m.p>
 
         {/* CTA Buttons with light glow */}
-        <motion.div
+        <m.div
           initial="hidden"
           animate="visible"
           variants={cinematicReveal(0.55)}
@@ -123,13 +122,13 @@ export default function Hero() {
           >
             {t("ctaSecondary")}
           </Button>
-        </motion.div>
+        </m.div>
       </Container>
 
       {/* Cinematic Architectural Render Image (Apple-style scroll transition) */}
-      <motion.div
-        initial={{ opacity: 0, y: 80, scale: 0.98, filter: "blur(8px)" }}
-        animate={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
+      <m.div
+        initial={{ opacity: 0, y: 80, scale: 0.98 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ duration: 1.4, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
         style={{ scale: scaleImage, y: yImage }}
         className="relative z-10 w-full max-w-5xl px-4 sm:px-6 mx-auto mb-10"
@@ -137,19 +136,22 @@ export default function Hero() {
         <div className="relative aspect-[21/9] w-full rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.8)] glass-card">
           <Image
             src="/images/hero-house.jpg"
-            alt="Luxury Architecture Render"
+            alt="Luxury home remodeling and construction in Kyle, Texas by Canito Construction LLC"
             fill
             className="object-cover object-center select-none"
             priority
+            fetchPriority="high"
+            quality={80}
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 95vw, 1280px"
           />
           {/* Subtle overlay gradient on top and bottom of the image for seamless layout integration */}
           <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0B] via-transparent to-transparent opacity-80" />
           <div className="absolute inset-0 bg-gradient-to-b from-[#0B0B0B]/30 via-transparent to-transparent" />
         </div>
-      </motion.div>
+      </m.div>
 
       {/* Trust indicators */}
-      <motion.div
+      <m.div
         initial="hidden"
         animate="visible"
         variants={cinematicReveal(0.85)}
@@ -161,7 +163,7 @@ export default function Hero() {
             <span>{label}</span>
           </div>
         ))}
-      </motion.div>
+      </m.div>
 
       {/* Elegant bottom light separator */}
       <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent z-10" />

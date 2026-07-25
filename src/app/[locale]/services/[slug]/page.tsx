@@ -50,10 +50,11 @@ export async function generateMetadata({ params }: PageProps) {
     title: t("seoTitle"),
     description: t("seoDesc"),
     alternates: {
-      canonical: `/services/${slug}`,
+      canonical: `https://www.canitoconstruction.com/${locale}/services/${slug}`,
       languages: {
-        en: `/en/services/${slug}`,
-        es: `/es/services/${slug}`,
+        en: `https://www.canitoconstruction.com/en/services/${slug}`,
+        es: `https://www.canitoconstruction.com/es/services/${slug}`,
+        "x-default": `https://www.canitoconstruction.com/en/services/${slug}`,
       },
     },
   };

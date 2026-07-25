@@ -1,18 +1,18 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import Button from "@/components/ui/Button";
 import Icon from "@/components/ui/Icon";
 import { Container } from "@/components/ui/Layouts";
 import { typography } from "@/design-system/tokens";
 
 export default function FinalCTA() {
+  // GPU-only: no filter/blur
   const cinematicReveal = (delay = 0) => ({
-    hidden: { opacity: 0, y: 25, filter: "blur(6px)" },
+    hidden: { opacity: 0, y: 25 },
     visible: {
       opacity: 1,
       y: 0,
-      filter: "blur(0px)",
       transition: {
         duration: 0.8,
         delay,
@@ -28,7 +28,7 @@ export default function FinalCTA() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-[#D4AF37]/3 blur-[120px] pointer-events-none animate-pulse-slow" />
       
       <Container className="relative z-10 text-center flex flex-col items-center">
-        <motion.div
+        <m.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
@@ -73,7 +73,7 @@ export default function FinalCTA() {
             </a>
           </div>
 
-        </motion.div>
+        </m.div>
       </Container>
     </section>
   );

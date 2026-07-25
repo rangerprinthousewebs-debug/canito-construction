@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import Icon, { IconType } from "@/components/ui/Icon";
 import Card from "@/components/ui/Card";
 import { Section, Container, Grid } from "@/components/ui/Layouts";
@@ -64,13 +64,12 @@ export default function Services() {
     },
   ];
 
-  // Custom blur reveal variants for grid items
+  // GPU-only animations: no filter/blur
   const itemReveal = (idx: number) => ({
-    hidden: { opacity: 0, y: 30, filter: "blur(8px)" },
+    hidden: { opacity: 0, y: 30 },
     visible: {
       opacity: 1,
       y: 0,
-      filter: "blur(0px)",
       transition: {
         duration: 0.8,
         delay: idx * 0.05,
@@ -87,7 +86,7 @@ export default function Services() {
       <Container>
         {/* Section Header */}
         <div className="max-w-3xl mb-20 text-center mx-auto">
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -95,22 +94,22 @@ export default function Services() {
             className="text-xs uppercase tracking-widest text-[#D4AF37] font-semibold mb-4"
           >
             {t("title")}
-          </motion.div>
-          <motion.h2
-            initial={{ opacity: 0, y: 20, filter: "blur(6px)" }}
-            whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+          </m.div>
+          <m.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay: 0.1 }}
             className={`${typography.headingXL} text-white font-extrabold tracking-tight mb-6`}
           >
             {t("subtitle")}
-          </motion.h2>
+          </m.h2>
         </div>
 
         {/* Services Grid (9 services layout) */}
         <Grid cols={3} gap={6}>
           {servicesList.map((service, index) => (
-            <motion.div
+            <m.div
               key={index}
               initial="hidden"
               whileInView="visible"
@@ -133,7 +132,7 @@ export default function Services() {
                   {t(service.descKey)}
                 </p>
               </Card>
-            </motion.div>
+            </m.div>
           ))}
         </Grid>
       </Container>

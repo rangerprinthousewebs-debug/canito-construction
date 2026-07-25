@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import Card from "@/components/ui/Card";
 import { Section, Container, Grid } from "@/components/ui/Layouts";
 import { typography } from "@/design-system/tokens";
@@ -22,12 +22,12 @@ export default function Testimonials() {
     { commentKey: "client3.comment", nameKey: "client3.name", cityKey: "client3.city", rating: 5 },
   ];
 
+  // GPU-only animations: no filter/blur
   const itemReveal = (idx: number) => ({
-    hidden: { opacity: 0, y: 30, filter: "blur(8px)" },
+    hidden: { opacity: 0, y: 30 },
     visible: {
       opacity: 1,
       y: 0,
-      filter: "blur(0px)",
       transition: {
         duration: 0.8,
         delay: idx * 0.08,
@@ -43,7 +43,7 @@ export default function Testimonials() {
       <Container>
         {/* Header */}
         <div className="max-w-3xl mb-20 text-center mx-auto">
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -51,22 +51,22 @@ export default function Testimonials() {
             className="text-xs uppercase tracking-widest text-[#D4AF37] font-semibold mb-4"
           >
             {t("title")}
-          </motion.div>
-          <motion.h2
-            initial={{ opacity: 0, y: 20, filter: "blur(6px)" }}
-            whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+          </m.div>
+          <m.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.1 }}
             className={`${typography.headingXL} text-white font-extrabold tracking-tight mb-6`}
           >
             {t("subtitle")}
-          </motion.h2>
+          </m.h2>
         </div>
 
         {/* Testimonial Cards Grid */}
         <Grid cols={3} gap={6}>
           {list.map((item, index) => (
-            <motion.div
+            <m.div
               key={index}
               initial="hidden"
               whileInView="visible"
@@ -86,17 +86,17 @@ export default function Testimonials() {
                   &ldquo;{t(item.commentKey)}&rdquo;
                 </p>
 
-                {/* Client info */}
+                {/* Client info — h3 instead of h4 to preserve heading hierarchy (h2 → h3) */}
                 <div className="border-t border-white/5 pt-4">
-                  <h4 className="font-bold text-white text-xs tracking-tight">
+                  <h3 className="font-bold text-white text-xs tracking-tight">
                     {t(item.nameKey)}
-                  </h4>
+                  </h3>
                   <p className="text-[10px] text-[#9B9B9B] mt-0.5 uppercase tracking-wider font-bold">
                     {t(item.cityKey)}
                   </p>
                 </div>
               </Card>
-            </motion.div>
+            </m.div>
           ))}
         </Grid>
       </Container>
